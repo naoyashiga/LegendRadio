@@ -13,6 +13,9 @@
 		9AEEB1B01B25BB2800EB1DFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AF1B25BB2800EB1DFD /* Images.xcassets */; };
 		9AEEB1B31B25BB2800EB1DFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1B11B25BB2800EB1DFD /* LaunchScreen.xib */; };
 		9AEEB1BF1B25BB2800EB1DFD /* housoushitsuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1BE1B25BB2800EB1DFD /* housoushitsuTests.swift */; };
+		9AEEB1C91B25C48D00EB1DFD /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */; };
+		9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */; };
+		9AEEB1CE1B25C4C500EB1DFD /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		9AEEB1B81B25BB2800EB1DFD /* housoushitsuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = housoushitsuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEB1BD1B25BB2800EB1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEEB1BE1B25BB2800EB1DFD /* housoushitsuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = housoushitsuTests.swift; sourceTree = "<group>"; };
+		9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 			children = (
 				9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */,
 				9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */,
+				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
+				9AEEB1CA1B25C4B100EB1DFD /* View */,
 				9AEEB1AC1B25BB2800EB1DFD /* Main.storyboard */,
 				9AEEB1AF1B25BB2800EB1DFD /* Images.xcassets */,
 				9AEEB1B11B25BB2800EB1DFD /* LaunchScreen.xib */,
@@ -110,6 +118,15 @@
 				9AEEB1BD1B25BB2800EB1DFD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AEEB1CA1B25C4B100EB1DFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */,
+				9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */,
+				9AEEB1CE1B25C4C500EB1DFD /* ListTableViewCell.xib in Resources */,
 				9AEEB1B31B25BB2800EB1DFD /* LaunchScreen.xib in Resources */,
 				9AEEB1B01B25BB2800EB1DFD /* Images.xcassets in Resources */,
 			);
@@ -212,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AEEB1C91B25C48D00EB1DFD /* ListTableViewController.swift in Sources */,
+				9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */,
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
 				9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */,
 			);
