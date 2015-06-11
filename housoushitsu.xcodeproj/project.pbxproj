@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AB8EC001B286223008B31DE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EBFF1B286223008B31DE /* Utils.swift */; };
+		9AB8EC031B29A33C008B31DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EC011B29A33C008B31DE /* DetailViewController.swift */; };
+		9AB8EC041B29A33C008B31DE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8EC021B29A33C008B31DE /* DetailViewController.xib */; };
 		9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */; };
 		9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */; };
 		9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AC1B25BB2800EB1DFD /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 		9AEEB1C91B25C48D00EB1DFD /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */; };
 		9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */; };
 		9AEEB1CE1B25C4C500EB1DFD /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */; };
+		9AEEB1D11B25C91C00EB1DFD /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D01B25C91C00EB1DFD /* HttpService.swift */; };
+		9AEEB1D31B25C96F00EB1DFD /* HousoushitsuBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D21B25C96F00EB1DFD /* HousoushitsuBase.swift */; };
+		9AEEB1D51B25C9B200EB1DFD /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D41B25C9B200EB1DFD /* Story.swift */; };
+		9AEEB1D71B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D61B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift */; };
+		9AEEB1DA1B25CA4C00EB1DFD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D91B25CA4C00EB1DFD /* Config.swift */; };
+		9AEEB1DC1B25CA7300EB1DFD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1DB1B25CA7300EB1DFD /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AB8EBFF1B286223008B31DE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9AB8EC011B29A33C008B31DE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9AB8EC021B29A33C008B31DE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		9AEEB1A31B25BB2800EB1DFD /* housoushitsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = housoushitsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEB1A71B25BB2800EB1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +54,12 @@
 		9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		9AEEB1D01B25C91C00EB1DFD /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		9AEEB1D21B25C96F00EB1DFD /* HousoushitsuBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousoushitsuBase.swift; sourceTree = "<group>"; };
+		9AEEB1D41B25C9B200EB1DFD /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		9AEEB1D61B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousoushitsuObjectHandler.swift; sourceTree = "<group>"; };
+		9AEEB1D91B25CA4C00EB1DFD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		9AEEB1DB1B25CA7300EB1DFD /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AB8EBFE1B286204008B31DE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8EBFF1B286223008B31DE /* Utils.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		9AEEB19A1B25BB2800EB1DFD = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +111,10 @@
 			children = (
 				9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */,
 				9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */,
-				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
+				9AEEB1DD1B25CB9B00EB1DFD /* Controller */,
+				9AEEB1CF1B25C90200EB1DFD /* Model */,
 				9AEEB1CA1B25C4B100EB1DFD /* View */,
+				9AB8EBFE1B286204008B31DE /* Helper */,
 				9AEEB1AC1B25BB2800EB1DFD /* Main.storyboard */,
 				9AEEB1AF1B25BB2800EB1DFD /* Images.xcassets */,
 				9AEEB1B11B25BB2800EB1DFD /* LaunchScreen.xib */,
@@ -127,6 +155,37 @@
 				9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		9AEEB1CF1B25C90200EB1DFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEB1D81B25CA3300EB1DFD /* Config */,
+				9AEEB1D21B25C96F00EB1DFD /* HousoushitsuBase.swift */,
+				9AEEB1D61B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift */,
+				9AEEB1D41B25C9B200EB1DFD /* Story.swift */,
+				9AEEB1D01B25C91C00EB1DFD /* HttpService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9AEEB1D81B25CA3300EB1DFD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEB1D91B25CA4C00EB1DFD /* Config.swift */,
+				9AEEB1DB1B25CA7300EB1DFD /* Color.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		9AEEB1DD1B25CB9B00EB1DFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
+				9AB8EC011B29A33C008B31DE /* DetailViewController.swift */,
+				9AB8EC021B29A33C008B31DE /* DetailViewController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +270,7 @@
 			files = (
 				9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */,
 				9AEEB1CE1B25C4C500EB1DFD /* ListTableViewCell.xib in Resources */,
+				9AB8EC041B29A33C008B31DE /* DetailViewController.xib in Resources */,
 				9AEEB1B31B25BB2800EB1DFD /* LaunchScreen.xib in Resources */,
 				9AEEB1B01B25BB2800EB1DFD /* Images.xcassets in Resources */,
 			);
@@ -230,10 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AEEB1D51B25C9B200EB1DFD /* Story.swift in Sources */,
 				9AEEB1C91B25C48D00EB1DFD /* ListTableViewController.swift in Sources */,
+				9AEEB1DA1B25CA4C00EB1DFD /* Config.swift in Sources */,
+				9AB8EC031B29A33C008B31DE /* DetailViewController.swift in Sources */,
+				9AEEB1DC1B25CA7300EB1DFD /* Color.swift in Sources */,
+				9AEEB1D71B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift in Sources */,
 				9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */,
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
+				9AB8EC001B286223008B31DE /* Utils.swift in Sources */,
 				9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */,
+				9AEEB1D11B25C91C00EB1DFD /* HttpService.swift in Sources */,
+				9AEEB1D31B25C96F00EB1DFD /* HousoushitsuBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +428,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
 			};
 			name = Debug;
 		};
@@ -370,9 +440,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
 			};
 			name = Release;
 		};
@@ -380,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -391,6 +464,7 @@
 				INFOPLIST_FILE = housoushitsuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/housoushitsu.app/housoushitsu";
 			};
 			name = Debug;
@@ -399,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -406,6 +481,7 @@
 				INFOPLIST_FILE = housoushitsuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/housoushitsu.app/housoushitsu";
 			};
 			name = Release;
@@ -429,6 +505,7 @@
 				9AEEB1C41B25BB2800EB1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AEEB1C51B25BB2800EB1DFD /* Build configuration list for PBXNativeTarget "housoushitsuTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +514,7 @@
 				9AEEB1C71B25BB2800EB1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
