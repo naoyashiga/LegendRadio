@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C84EB59663F02F5D16B852 /* XCDYouTubeVideoWebpage.h in Headers */ = {isa = PBXBuildFile; fileRef = D65B98439AC81C0FEF0F70CC /* XCDYouTubeVideoWebpage.h */; };
+		00D5B00FA3EA44B3C29305B1 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B66A04BF3DC3604B89F7D8 /* Pods-dummy.m */; };
+		1162B5159AF86BCF199C1E58 /* XCDYouTubeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151B02154349562BA212F06 /* XCDYouTubeVideo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		176CA1480F73403F16FD3FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12254BAECE6FFEBE8DC4097A /* Foundation.framework */; };
+		25DA0457CFA0584BAA96690F /* XCDYouTubeVideoPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EB9F5F7CBDEA79CAAD08C7F1 /* XCDYouTubeVideoPlayerViewController.h */; };
+		2E760C0FFF05910AC52B51A4 /* XCDYouTubeVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 378B43DA393D42CC6005D4B3 /* XCDYouTubeVideo.h */; };
+		4B6A0706A6A3761E55FD2812 /* XCDYouTubeVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA36DBD11E2232A0ED28767 /* XCDYouTubeVideoPlayerViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C47F33EC9362B965A7F255D /* XCDYouTubeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 375C086479728FFB8FEE0F29 /* XCDYouTubeClient.h */; };
+		518B46E717E1EE4DDDFE08E4 /* XCDYouTubeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 545E25CD1D12607FA1E913A7 /* XCDYouTubeKit.h */; };
+		54B209D6A71682C048210DCB /* XCDYouTubeVideoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BF40F445173911F212D797 /* XCDYouTubeVideoOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56084AA1451745B224B231D1 /* XCDYouTubeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E2163DD13DEC56913D5ABB /* XCDYouTubeClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5E38FC46D04DDCFD62019020 /* XCDYouTubeVideo+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D91353A97D19C0F62173E412 /* XCDYouTubeVideo+Private.h */; };
+		87124076A7D1D64E90243645 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12254BAECE6FFEBE8DC4097A /* Foundation.framework */; };
+		911204548517485CA3B42C4B /* XCDYouTubePlayerScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8F905BDE4A79466C17AB2 /* XCDYouTubePlayerScript.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D09745DCE6180AE876C4034 /* XCDYouTubeError.h in Headers */ = {isa = PBXBuildFile; fileRef = BB431AAF68B8656FCF9807D0 /* XCDYouTubeError.h */; };
+		9D2F3E234D7EF3F5786BF384 /* Pods-XCDYouTubeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CCA490F5167CDCD0068B8E /* Pods-XCDYouTubeKit-dummy.m */; };
+		C419269F68908DBA07148693 /* XCDYouTubeVideoWebpage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0B82C3591D9ABF0F70DEF /* XCDYouTubeVideoWebpage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C45F57AE43BC51154F03BA6C /* XCDYouTubePlayerScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D81DA5BE05460AE260A0460 /* XCDYouTubePlayerScript.h */; };
+		CEB8D04BFEED22F4CCA152C8 /* XCDYouTubeVideoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C7C98E59BAC4673D519F5F /* XCDYouTubeVideoOperation.h */; };
+		DC919E36F2E21E459CE72FF0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC8A0BFE80A1C7366E8F7A9 /* MediaPlayer.framework */; };
+		F111085CDDA94DD5183E3361 /* XCDYouTubeOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 68CA90F95553BFAB474F2A09 /* XCDYouTubeOperation.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DCDD2E8B61940DC4345C25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BE20544BFA767C9E01C9C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD799D33E5983C795A3719C1;
+			remoteInfo = "Pods-XCDYouTubeKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12254BAECE6FFEBE8DC4097A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		23BF40F445173911F212D797 /* XCDYouTubeVideoOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideoOperation.m; path = XCDYouTubeKit/XCDYouTubeVideoOperation.m; sourceTree = "<group>"; };
+		24FA2428DEA0230968050F12 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26C7C98E59BAC4673D519F5F /* XCDYouTubeVideoOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideoOperation.h; path = XCDYouTubeKit/XCDYouTubeVideoOperation.h; sourceTree = "<group>"; };
+		2CC8A0BFE80A1C7366E8F7A9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		2DD0B82C3591D9ABF0F70DEF /* XCDYouTubeVideoWebpage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideoWebpage.m; path = XCDYouTubeKit/XCDYouTubeVideoWebpage.m; sourceTree = "<group>"; };
+		375C086479728FFB8FEE0F29 /* XCDYouTubeClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeClient.h; path = XCDYouTubeKit/XCDYouTubeClient.h; sourceTree = "<group>"; };
+		378B43DA393D42CC6005D4B3 /* XCDYouTubeVideo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideo.h; path = XCDYouTubeKit/XCDYouTubeVideo.h; sourceTree = "<group>"; };
+		3CA36DBD11E2232A0ED28767 /* XCDYouTubeVideoPlayerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideoPlayerViewController.m; path = XCDYouTubeKit/XCDYouTubeVideoPlayerViewController.m; sourceTree = "<group>"; };
+		3E6C0F9679A1AE6509FB6749 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE8F905BDE4A79466C17AB2 /* XCDYouTubePlayerScript.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubePlayerScript.m; path = XCDYouTubeKit/XCDYouTubePlayerScript.m; sourceTree = "<group>"; };
+		4D81DA5BE05460AE260A0460 /* XCDYouTubePlayerScript.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubePlayerScript.h; path = XCDYouTubeKit/XCDYouTubePlayerScript.h; sourceTree = "<group>"; };
+		5097D66490F1AF8A5D0E2789 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		5260FF83A8AB6999CC07AAB3 /* Pods-XCDYouTubeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCDYouTubeKit.xcconfig"; sourceTree = "<group>"; };
+		545E25CD1D12607FA1E913A7 /* XCDYouTubeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeKit.h; path = XCDYouTubeKit/XCDYouTubeKit.h; sourceTree = "<group>"; };
+		658072AF58A5EB87A2848009 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		68CA90F95553BFAB474F2A09 /* XCDYouTubeOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeOperation.h; path = XCDYouTubeKit/XCDYouTubeOperation.h; sourceTree = "<group>"; };
+		7151B02154349562BA212F06 /* XCDYouTubeVideo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeVideo.m; path = XCDYouTubeKit/XCDYouTubeVideo.m; sourceTree = "<group>"; };
+		82E2163DD13DEC56913D5ABB /* XCDYouTubeClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCDYouTubeClient.m; path = XCDYouTubeKit/XCDYouTubeClient.m; sourceTree = "<group>"; };
+		94B66A04BF3DC3604B89F7D8 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		961FADF62A8158E9041565F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A2CCA490F5167CDCD0068B8E /* Pods-XCDYouTubeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCDYouTubeKit-dummy.m"; sourceTree = "<group>"; };
+		A54DD78FF225FE11B925CC83 /* libPods-XCDYouTubeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCDYouTubeKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB431AAF68B8656FCF9807D0 /* XCDYouTubeError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeError.h; path = XCDYouTubeKit/XCDYouTubeError.h; sourceTree = "<group>"; };
+		BDD5D3C8C74A707942C7016B /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		BF08739243D8E49E3C6ED924 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		BFD03C881AE46A2F742388E1 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3651A509B5D3A209982A1EF /* Pods-XCDYouTubeKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCDYouTubeKit-Private.xcconfig"; sourceTree = "<group>"; };
+		D65B98439AC81C0FEF0F70CC /* XCDYouTubeVideoWebpage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideoWebpage.h; path = XCDYouTubeKit/XCDYouTubeVideoWebpage.h; sourceTree = "<group>"; };
+		D70256A54EC3E016B350858B /* Pods-XCDYouTubeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCDYouTubeKit-prefix.pch"; sourceTree = "<group>"; };
+		D91353A97D19C0F62173E412 /* XCDYouTubeVideo+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCDYouTubeVideo+Private.h"; path = "XCDYouTubeKit/XCDYouTubeVideo+Private.h"; sourceTree = "<group>"; };
+		EB9F5F7CBDEA79CAAD08C7F1 /* XCDYouTubeVideoPlayerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCDYouTubeVideoPlayerViewController.h; path = XCDYouTubeKit/XCDYouTubeVideoPlayerViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DADA591104632BED6A0EE00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87124076A7D1D64E90243645 /* Foundation.framework in Frameworks */,
+				DC919E36F2E21E459CE72FF0 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29101DF1D74E5EE7FC7C39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176CA1480F73403F16FD3FD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E5218440FA09AB18503566 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC08C61D60D013B25D4FA6AE /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		30F97C743F4DD8C615FCDBA2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				12254BAECE6FFEBE8DC4097A /* Foundation.framework */,
+				2CC8A0BFE80A1C7366E8F7A9 /* MediaPlayer.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		33251EBD5B70118217C84881 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E6C0F9679A1AE6509FB6749 /* libPods.a */,
+				A54DD78FF225FE11B925CC83 /* libPods-XCDYouTubeKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A463CBB464BA60D24C66EA6 /* XCDYouTubeKit */ = {
+			isa = PBXGroup;
+			children = (
+				375C086479728FFB8FEE0F29 /* XCDYouTubeClient.h */,
+				82E2163DD13DEC56913D5ABB /* XCDYouTubeClient.m */,
+				BB431AAF68B8656FCF9807D0 /* XCDYouTubeError.h */,
+				545E25CD1D12607FA1E913A7 /* XCDYouTubeKit.h */,
+				68CA90F95553BFAB474F2A09 /* XCDYouTubeOperation.h */,
+				4D81DA5BE05460AE260A0460 /* XCDYouTubePlayerScript.h */,
+				3EE8F905BDE4A79466C17AB2 /* XCDYouTubePlayerScript.m */,
+				378B43DA393D42CC6005D4B3 /* XCDYouTubeVideo.h */,
+				7151B02154349562BA212F06 /* XCDYouTubeVideo.m */,
+				D91353A97D19C0F62173E412 /* XCDYouTubeVideo+Private.h */,
+				26C7C98E59BAC4673D519F5F /* XCDYouTubeVideoOperation.h */,
+				23BF40F445173911F212D797 /* XCDYouTubeVideoOperation.m */,
+				EB9F5F7CBDEA79CAAD08C7F1 /* XCDYouTubeVideoPlayerViewController.h */,
+				3CA36DBD11E2232A0ED28767 /* XCDYouTubeVideoPlayerViewController.m */,
+				D65B98439AC81C0FEF0F70CC /* XCDYouTubeVideoWebpage.h */,
+				2DD0B82C3591D9ABF0F70DEF /* XCDYouTubeVideoWebpage.m */,
+				B96AB243E713FE1A8F1A0168 /* Support Files */,
+			);
+			path = XCDYouTubeKit;
+			sourceTree = "<group>";
+		};
+		B96AB243E713FE1A8F1A0168 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5260FF83A8AB6999CC07AAB3 /* Pods-XCDYouTubeKit.xcconfig */,
+				C3651A509B5D3A209982A1EF /* Pods-XCDYouTubeKit-Private.xcconfig */,
+				A2CCA490F5167CDCD0068B8E /* Pods-XCDYouTubeKit-dummy.m */,
+				D70256A54EC3E016B350858B /* Pods-XCDYouTubeKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-XCDYouTubeKit";
+			sourceTree = "<group>";
+		};
+		BCBB22580A4C8512DD1423F4 = {
+			isa = PBXGroup;
+			children = (
+				BFD03C881AE46A2F742388E1 /* Podfile */,
+				E802CE17310B6212FDC906B3 /* Frameworks */,
+				D206869CD684052E1DF4F6AC /* Pods */,
+				33251EBD5B70118217C84881 /* Products */,
+				13E5218440FA09AB18503566 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D206869CD684052E1DF4F6AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A463CBB464BA60D24C66EA6 /* XCDYouTubeKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC08C61D60D013B25D4FA6AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24FA2428DEA0230968050F12 /* Pods-acknowledgements.markdown */,
+				5097D66490F1AF8A5D0E2789 /* Pods-acknowledgements.plist */,
+				94B66A04BF3DC3604B89F7D8 /* Pods-dummy.m */,
+				BDD5D3C8C74A707942C7016B /* Pods-environment.h */,
+				658072AF58A5EB87A2848009 /* Pods-resources.sh */,
+				BF08739243D8E49E3C6ED924 /* Pods.debug.xcconfig */,
+				961FADF62A8158E9041565F2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		E802CE17310B6212FDC906B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30F97C743F4DD8C615FCDBA2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		98BE185DB836AB6D71F868C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C47F33EC9362B965A7F255D /* XCDYouTubeClient.h in Headers */,
+				9D09745DCE6180AE876C4034 /* XCDYouTubeError.h in Headers */,
+				518B46E717E1EE4DDDFE08E4 /* XCDYouTubeKit.h in Headers */,
+				F111085CDDA94DD5183E3361 /* XCDYouTubeOperation.h in Headers */,
+				C45F57AE43BC51154F03BA6C /* XCDYouTubePlayerScript.h in Headers */,
+				5E38FC46D04DDCFD62019020 /* XCDYouTubeVideo+Private.h in Headers */,
+				2E760C0FFF05910AC52B51A4 /* XCDYouTubeVideo.h in Headers */,
+				CEB8D04BFEED22F4CCA152C8 /* XCDYouTubeVideoOperation.h in Headers */,
+				25DA0457CFA0584BAA96690F /* XCDYouTubeVideoPlayerViewController.h in Headers */,
+				00C84EB59663F02F5D16B852 /* XCDYouTubeVideoWebpage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42CDAD7D822AE1A73934D3FA /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E251736205150E5ECB363B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				739769D91D3B7557B8DD360D /* Sources */,
+				F29101DF1D74E5EE7FC7C39B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27202DD5BC4CB259C35BA802 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 3E6C0F9679A1AE6509FB6749 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BD799D33E5983C795A3719C1 /* Pods-XCDYouTubeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B98AAC48ED4FC64D5E57C0C /* Build configuration list for PBXNativeTarget "Pods-XCDYouTubeKit" */;
+			buildPhases = (
+				5F903D069464176F1CA97781 /* Sources */,
+				3DADA591104632BED6A0EE00 /* Frameworks */,
+				98BE185DB836AB6D71F868C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-XCDYouTubeKit";
+			productName = "Pods-XCDYouTubeKit";
+			productReference = A54DD78FF225FE11B925CC83 /* libPods-XCDYouTubeKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BE20544BFA767C9E01C9C05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 778CE505EB2204E949B64252 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCBB22580A4C8512DD1423F4;
+			productRefGroup = 33251EBD5B70118217C84881 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42CDAD7D822AE1A73934D3FA /* Pods */,
+				BD799D33E5983C795A3719C1 /* Pods-XCDYouTubeKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F903D069464176F1CA97781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2F3E234D7EF3F5786BF384 /* Pods-XCDYouTubeKit-dummy.m in Sources */,
+				56084AA1451745B224B231D1 /* XCDYouTubeClient.m in Sources */,
+				911204548517485CA3B42C4B /* XCDYouTubePlayerScript.m in Sources */,
+				1162B5159AF86BCF199C1E58 /* XCDYouTubeVideo.m in Sources */,
+				54B209D6A71682C048210DCB /* XCDYouTubeVideoOperation.m in Sources */,
+				4B6A0706A6A3761E55FD2812 /* XCDYouTubeVideoPlayerViewController.m in Sources */,
+				C419269F68908DBA07148693 /* XCDYouTubeVideoWebpage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739769D91D3B7557B8DD360D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D5B00FA3EA44B3C29305B1 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27202DD5BC4CB259C35BA802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XCDYouTubeKit";
+			target = BD799D33E5983C795A3719C1 /* Pods-XCDYouTubeKit */;
+			targetProxy = 0DCDD2E8B61940DC4345C25B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		296A42B27E5C3AC25009C813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69015AC3D19E9BE8226FB76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		82E446C923487DC06E67F7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3651A509B5D3A209982A1EF /* Pods-XCDYouTubeKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XCDYouTubeKit/Pods-XCDYouTubeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8C788B1B4ED48385B354B59C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 961FADF62A8158E9041565F2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A58F662334C058FD42A86866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3651A509B5D3A209982A1EF /* Pods-XCDYouTubeKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XCDYouTubeKit/Pods-XCDYouTubeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D7670B23E080E76B4D1A005E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF08739243D8E49E3C6ED924 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43E251736205150E5ECB363B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7670B23E080E76B4D1A005E /* Debug */,
+				8C788B1B4ED48385B354B59C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B98AAC48ED4FC64D5E57C0C /* Build configuration list for PBXNativeTarget "Pods-XCDYouTubeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A58F662334C058FD42A86866 /* Debug */,
+				82E446C923487DC06E67F7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		778CE505EB2204E949B64252 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69015AC3D19E9BE8226FB76A /* Debug */,
+				296A42B27E5C3AC25009C813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BE20544BFA767C9E01C9C05 /* Project object */;
+}

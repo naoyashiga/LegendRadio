@@ -9,15 +9,34 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var playerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView.loadHTMLString("<html><body style=\"(margin:0)\"><embed src=\"https://www.youtube.com/embed/tNT6M-SHuhI?rel=0&amp;showinfo=0\" frameborder=\"0\"></embed></body></html>", baseURL: nil)
+//        webView.loadHTMLString("<html><body style=\"(margin:0)\"><embed src=\"https://www.youtube.com/embed/tNT6M-SHuhI?rel=0&amp;showinfo=0\" frameborder=\"0\"></embed></body></html>", baseURL: nil)
+        
+//        let mainPlayerViewFrame: CGRect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 3)
+//        let mainPlayerView: UIView = UIView(frame: mainPlayerViewFrame)
+//        self.view.addSubview(mainPlayerView)
+        
 
     }
 
+    override func viewDidAppear(animated: Bool) {
+//        let mainPlayerViewFrame: CGRect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 3)
+//        let mainPlayerView: UIView = UIView(frame: mainPlayerViewFrame)
+//        self.view.addSubview(mainPlayerView)
+        
+        let idVideo = "tNT6M-SHuhI"
+        var videoPlayerViewController: XCDYouTubeVideoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: idVideo);
+//        videoPlayerViewController.presentInView(mainPlayerView);
+        videoPlayerViewController.presentInView(playerView);
+        videoPlayerViewController.moviePlayer.controlStyle = MPMovieControlStyle.Embedded
+        videoPlayerViewController.moviePlayer.play()
+//        self.view.addSubview(videoPlayerViewController.view)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

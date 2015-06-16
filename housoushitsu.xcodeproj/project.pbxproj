@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310C8D1A629F23EB373AA302 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F79E1B2B08B9ECC621AC5C /* libPods.a */; };
 		9AB8EC001B286223008B31DE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EBFF1B286223008B31DE /* Utils.swift */; };
 		9AB8EC031B29A33C008B31DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EC011B29A33C008B31DE /* DetailViewController.swift */; };
 		9AB8EC041B29A33C008B31DE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8EC021B29A33C008B31DE /* DetailViewController.xib */; };
@@ -38,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		536757F3FC6257EF7145B68B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5C720A021D5FB74F0709AA66 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		94F79E1B2B08B9ECC621AC5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB8EBFF1B286223008B31DE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9AB8EC011B29A33C008B31DE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9AB8EC021B29A33C008B31DE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		9AB8EC061B29AFE5008B31DE /* housoushitsu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "housoushitsu-Bridging-Header.h"; sourceTree = "<group>"; };
 		9AEEB1A31B25BB2800EB1DFD /* housoushitsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = housoushitsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEB1A71B25BB2800EB1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310C8D1A629F23EB373AA302 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815A639CBAD178C096EE2B3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C720A021D5FB74F0709AA66 /* Pods.debug.xcconfig */,
+				536757F3FC6257EF7145B68B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9AB8EBFE1B286204008B31DE /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +109,8 @@
 				9AEEB1A51B25BB2800EB1DFD /* housoushitsu */,
 				9AEEB1BB1B25BB2800EB1DFD /* housoushitsuTests */,
 				9AEEB1A41B25BB2800EB1DFD /* Products */,
+				815A639CBAD178C096EE2B3D /* Pods */,
+				D8A96687539930A1B4043B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9AEEB1A71B25BB2800EB1DFD /* Info.plist */,
+				9AB8EC061B29AFE5008B31DE /* housoushitsu-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,6 +206,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		D8A96687539930A1B4043B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94F79E1B2B08B9ECC621AC5C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AEEB1C21B25BB2800EB1DFD /* Build configuration list for PBXNativeTarget "housoushitsu" */;
 			buildPhases = (
+				4027FF7288D03662A737F455 /* Check Pods Manifest.lock */,
 				9AEEB19F1B25BB2800EB1DFD /* Sources */,
 				9AEEB1A01B25BB2800EB1DFD /* Frameworks */,
 				9AEEB1A11B25BB2800EB1DFD /* Resources */,
+				2F18CD0AA6B7F310ED591AD1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,6 +312,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F18CD0AA6B7F310ED591AD1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4027FF7288D03662A737F455 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AEEB19F1B25BB2800EB1DFD /* Sources */ = {
@@ -426,25 +487,32 @@
 		};
 		9AEEB1C31B25BB2800EB1DFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C720A021D5FB74F0709AA66 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
+				SWIFT_OBJC_BRIDGING_HEADER = "housoushitsu/housoushitsu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9AEEB1C41B25BB2800EB1DFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536757F3FC6257EF7145B68B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
+				SWIFT_OBJC_BRIDGING_HEADER = "housoushitsu/housoushitsu-Bridging-Header.h";
 			};
 			name = Release;
 		};
