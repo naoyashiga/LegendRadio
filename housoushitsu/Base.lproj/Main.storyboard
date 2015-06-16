@@ -16,7 +16,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="sHx-D5-I2a" kind="relationship" relationship="viewControllers" id="365-wa-KJj"/>
                         <segue destination="NLx-Na-BWw" kind="relationship" relationship="viewControllers" id="6B5-41-yRQ"/>
                     </connections>
                 </tabBarController>
@@ -59,6 +58,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zTn-DP-IPB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="sGh-tR-jIy" kind="relationship" relationship="rootViewController" id="IPM-GQ-xCA"/>
                     </connections>
@@ -70,7 +72,7 @@
         <!--Item-->
         <scene sceneID="XSm-zF-gSo">
             <objects>
-                <tableViewController id="NLx-Na-BWw" sceneMemberID="viewController">
+                <tableViewController id="NLx-Na-BWw" customClass="BackNumberTableViewController" customModule="housoushitsu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6i8-MS-5cq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
