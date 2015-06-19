@@ -25,8 +25,19 @@ extension UIColor {
         }
     }
     
-    class func navigationBarTitleTextColor() -> UIColor {
+    class func cellLightBackgroundColor() -> UIColor {
         return UIColor.hexStr("ffffff", alpha: 1)
     }
     
+    class func cellDarkBackgroundColor() -> UIColor {
+        return UIColor.hexStr("F5F5F5", alpha: 1)
+    }
+    
+    class func tableHeaderBackgroundColor() -> UIColor {
+        return UIColor.hexStr("212121", alpha: 1)
+    }
+    
+    class func tableHeaderTextColor() -> UIColor {
+        return UIColor.hexStr("F5F5F5", alpha: 1)
+    }
 }

@@ -20,6 +20,8 @@ class SecondBackNumberTableViewController: UITableViewController {
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
         self.tableView.layoutMargins = UIEdgeInsetsZero
+        self.tableView.estimatedRowHeight = self.view.frame.height / 10
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         self.navigationItem.title = "第\(initialIndex)回-第\(initialIndex + 10)回"
     }
@@ -49,6 +51,13 @@ class SecondBackNumberTableViewController: UITableViewController {
         
         cell.backNumberLabel.text = "第\(start)回"
         
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.cellLightBackgroundColor()
+        } else {
+            cell.backgroundColor = UIColor.cellDarkBackgroundColor()
+        }
+        
+        cell.layoutIfNeeded()
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
         
@@ -59,5 +68,21 @@ class SecondBackNumberTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BackNumberTableViewCell
         let start = cell.backNumberLabel.text
         println(start)
+        
+        let vc = ListTableViewController()
+        
+        var storyIndex = initialIndex + indexPath.row
+        var storyIndexStr = ""
+        
+        if storyIndex < 100 {
+            storyIndexStr = "0" + String(initialIndex + indexPath.row)
+            vc.searchText = "放送室 \(storyIndexStr)"
+        } else {
+            vc.searchText = "放送室 \(storyIndex)"
+        }
+        
+        vc.navigationItem.title = "第\(storyIndex)回の検索結果"
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

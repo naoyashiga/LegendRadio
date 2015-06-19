@@ -33,6 +33,8 @@ class BackNumberTableViewController: UITableViewController {
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
         self.tableView.layoutMargins = UIEdgeInsetsZero
+        self.tableView.estimatedRowHeight = self.view.frame.height / 20
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         self.navigationItem.title = "バックナンバー"
     }
@@ -49,6 +51,17 @@ class BackNumberTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sections[section]
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        
+        header.contentView.backgroundColor = UIColor.tableHeaderBackgroundColor()
+        header.textLabel.textColor = UIColor.tableHeaderTextColor()
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40.0
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,6 +82,13 @@ class BackNumberTableViewController: UITableViewController {
 
         cell.backNumberLabel.text = "第\(start)回-第\(end)回"
         
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.cellLightBackgroundColor()
+        } else {
+            cell.backgroundColor = UIColor.cellDarkBackgroundColor()
+        }
+        
+        cell.layoutIfNeeded()
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
         

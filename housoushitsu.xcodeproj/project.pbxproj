@@ -136,6 +136,7 @@
 			children = (
 				9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */,
 				9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */,
+				9AEEB1D81B25CA3300EB1DFD /* Config */,
 				9AEEB1DD1B25CB9B00EB1DFD /* Controller */,
 				9AEEB1CF1B25C90200EB1DFD /* Model */,
 				9AEEB1CA1B25C4B100EB1DFD /* View */,
@@ -188,7 +189,6 @@
 		9AEEB1CF1B25C90200EB1DFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9AEEB1D81B25CA3300EB1DFD /* Config */,
 				9AEEB1D21B25C96F00EB1DFD /* HousoushitsuBase.swift */,
 				9AEEB1D61B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift */,
 				9AEEB1D41B25C9B200EB1DFD /* Story.swift */,

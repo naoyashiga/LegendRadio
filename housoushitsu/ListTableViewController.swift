@@ -16,19 +16,21 @@ class ListTableViewController: UITableViewController {
     }
     
     let reuseIdentifier = "ListTableViewCell"
+    var searchText = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let searchText = "放送室 270"
         let searchWord:String! = searchText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
         let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=10&order=viewCount"
         
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
-
-//        self.tableView.registerClass(ListTableViewCell.self, forCellReuseIdentifier: "Cell")
         
+        self.tableView.layoutMargins = UIEdgeInsetsZero
+        self.tableView.estimatedRowHeight = 200
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+
         HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
             self.stories = stories
             println(self.stories)
@@ -57,7 +59,16 @@ class ListTableViewController: UITableViewController {
         println(story.title)
         cell.titleLabel.text = story.title
         
+        cell.layoutIfNeeded()
 
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.cellLightBackgroundColor()
+        } else {
+            cell.backgroundColor = UIColor.cellDarkBackgroundColor()
+        }
+        
+        cell.separatorInset = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsetsZero
 
         return cell
     }
