@@ -23,6 +23,32 @@
             </objects>
             <point key="canvasLocation" x="-52" y="-344"/>
         </scene>
+        <!--Second Back Number Table View Controller-->
+        <scene sceneID="vKH-rs-RcJ">
+            <objects>
+                <tableViewController id="nnH-QW-JRs" customClass="SecondBackNumberTableViewController" customModule="housoushitsu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5LQ-FG-dNU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Sgn-wD-7Md">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sgn-wD-7Md" id="Fid-i1-99H">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nnH-QW-JRs" id="qyc-Y4-8Al"/>
+                            <outlet property="delegate" destination="nnH-QW-JRs" id="8Vz-eN-xbF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="au6-Pf-FK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="218"/>
+        </scene>
         <!--Item-->
         <scene sceneID="AdW-Q3-Zz7">
             <objects>
@@ -83,6 +109,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tJE-j4-8Lg" id="KpF-Ar-g4h">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="nnH-QW-JRs" kind="show" trigger="accessoryAction" id="ANZ-kb-5O9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

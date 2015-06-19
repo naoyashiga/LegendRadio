@@ -14,6 +14,7 @@
 		9ACF59FA1B304C47005202CC /* BackNumberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */; };
 		9ACF59FD1B304CC4005202CC /* BackNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF59FB1B304CC4005202CC /* BackNumberTableViewCell.swift */; };
 		9ACF59FE1B304CC4005202CC /* BackNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF59FC1B304CC4005202CC /* BackNumberTableViewCell.xib */; };
+		9ACF5A001B3436C8005202CC /* SecondBackNumberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */; };
 		9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */; };
 		9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */; };
 		9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AC1B25BB2800EB1DFD /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackNumberTableViewController.swift; sourceTree = "<group>"; };
 		9ACF59FB1B304CC4005202CC /* BackNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackNumberTableViewCell.swift; sourceTree = "<group>"; };
 		9ACF59FC1B304CC4005202CC /* BackNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackNumberTableViewCell.xib; sourceTree = "<group>"; };
+		9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBackNumberTableViewController.swift; sourceTree = "<group>"; };
 		9AEEB1A31B25BB2800EB1DFD /* housoushitsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = housoushitsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEB1A71B25BB2800EB1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				9AB8EC011B29A33C008B31DE /* DetailViewController.swift */,
 				9AB8EC021B29A33C008B31DE /* DetailViewController.xib */,
 				9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */,
+				9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				9AEEB1DC1B25CA7300EB1DFD /* Color.swift in Sources */,
 				9AEEB1D71B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift in Sources */,
 				9ACF59FA1B304C47005202CC /* BackNumberTableViewController.swift in Sources */,
+				9ACF5A001B3436C8005202CC /* SecondBackNumberTableViewController.swift in Sources */,
 				9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */,
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
 				9AB8EC001B286223008B31DE /* Utils.swift in Sources */,
