@@ -10,13 +10,19 @@ import Foundation
 
 class Story: HousoushitsuBase {
     var title = ""
+    var url = ""
     
     override init(data: NSDictionary) {
         super.init(data: data)
         
         let snippet = data["snippet"] as! NSDictionary
         self.title = Utils.getStringFromJSON(snippet, key: "title")
+        
+        self.url = snippet.valueForKeyPath("thumbnails.default.url") as! String
+//        let defaultDictinary = data["snippet"]["thumbnails"]["default"] as! NSDictionary
+//        self.url = Utils.getStringFromJSON(defaultDictinary, key: "url")
         println(self.title)
+        println(self.url)
         
         
 //        let images = data["images"] as! NSDictionary

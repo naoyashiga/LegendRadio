@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-XCDYouTubeKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>42CDAD7D822AE1A73934D3FA</key>
+		<key>1FD1E572C03EA794BB014D38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD799D33E5983C795A3719C1</key>
+		<key>6532B49C03254C43D1B7CD40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F41003C14669C203DC666A90</key>
 		<dict>
 			<key>primary</key>
 			<true/>

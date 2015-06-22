@@ -4,4 +4,5 @@
 
 
 #import <XCDYouTubeKit/XCDYouTubeKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 //#import "XCDYouTubeVideoPlayerViewController.h"

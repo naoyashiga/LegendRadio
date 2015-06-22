@@ -58,6 +58,7 @@ class ListTableViewController: UITableViewController {
         
         println(story.title)
         cell.titleLabel.text = story.title
+        cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
         
         cell.layoutIfNeeded()
 

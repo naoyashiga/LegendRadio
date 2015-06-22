@@ -14,21 +14,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NP2-ar-bZw">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="wxO-Jh-yjW"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="松本人志の放送室 第45回 「松本『携帯の絵文字はもっといいのを考えろ！』」" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJf-Gb-tY9">
-                        <rect key="frame" x="13" y="16" width="299" height="67"/>
+                        <rect key="frame" x="108" y="16" width="204" height="67"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="LJf-Gb-tY9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="39e-Qd-FhE"/>
                     <constraint firstAttribute="bottomMargin" secondItem="LJf-Gb-tY9" secondAttribute="bottom" constant="8" id="CGD-Xc-bdi"/>
+                    <constraint firstItem="NP2-ar-bZw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NPq-VY-zVw"/>
                     <constraint firstItem="LJf-Gb-tY9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Tq7-Dg-FNR"/>
+                    <constraint firstAttribute="bottom" secondItem="NP2-ar-bZw" secondAttribute="bottom" constant="1" id="ZEL-vf-Swg"/>
                     <constraint firstItem="LJf-Gb-tY9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="a0A-lK-3Gp"/>
+                    <constraint firstItem="LJf-Gb-tY9" firstAttribute="leading" secondItem="NP2-ar-bZw" secondAttribute="trailing" constant="8" id="pkN-4J-EVx"/>
+                    <constraint firstItem="NP2-ar-bZw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="trJ-8C-yvi"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="thumbNailImageView" destination="NP2-ar-bZw" id="1l6-lM-G4g"/>
                 <outlet property="titleLabel" destination="LJf-Gb-tY9" id="ogc-Dl-HnL"/>
             </connections>
         </tableViewCell>
