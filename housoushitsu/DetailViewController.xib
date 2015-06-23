@@ -16,18 +16,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppc-g9-18D" userLabel="Player View">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                    <rect key="frame" x="0.0" y="175" width="600" height="250"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="s5Y-gz-UUj"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ppc-g9-18D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CfF-sn-KVV"/>
-                <constraint firstItem="ppc-g9-18D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q4M-PT-eUR"/>
-                <constraint firstAttribute="trailing" secondItem="ppc-g9-18D" secondAttribute="trailing" id="oAg-l0-oLw"/>
+                <constraint firstAttribute="centerX" secondItem="ppc-g9-18D" secondAttribute="centerX" id="INJ-eD-EKs"/>
+                <constraint firstAttribute="centerY" secondItem="ppc-g9-18D" secondAttribute="centerY" id="gRh-QQ-SrH"/>
+                <constraint firstItem="ppc-g9-18D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h4y-d2-fW6"/>
+                <constraint firstAttribute="trailing" secondItem="ppc-g9-18D" secondAttribute="trailing" id="uKi-oy-RZP"/>
             </constraints>
         </view>
     </objects>

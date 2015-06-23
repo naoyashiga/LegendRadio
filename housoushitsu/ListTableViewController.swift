@@ -80,6 +80,7 @@ class ListTableViewController: UITableViewController {
         let story = stories[indexPath.row]
         
         let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        vc.navigationItem.title = story.title
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
