@@ -17,6 +17,7 @@
 		9ACF5A001B3436C8005202CC /* SecondBackNumberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */; };
 		9ACF5A061B38369D005202CC /* SecondBackNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */; };
 		9ACF5A071B38369D005202CC /* SecondBackNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */; };
+		9ACF5A091B39822A005202CC /* RandomListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF5A081B39822A005202CC /* RandomListTableViewController.swift */; };
 		9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */; };
 		9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */; };
 		9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AC1B25BB2800EB1DFD /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBackNumberTableViewController.swift; sourceTree = "<group>"; };
 		9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBackNumberTableViewCell.swift; sourceTree = "<group>"; };
 		9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondBackNumberTableViewCell.xib; sourceTree = "<group>"; };
+		9ACF5A081B39822A005202CC /* RandomListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomListTableViewController.swift; sourceTree = "<group>"; };
 		9AEEB1A31B25BB2800EB1DFD /* housoushitsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = housoushitsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEB1A71B25BB2800EB1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		9AEEB1DD1B25CB9B00EB1DFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9ACF5A081B39822A005202CC /* RandomListTableViewController.swift */,
 				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
 				9AB8EC011B29A33C008B31DE /* DetailViewController.swift */,
 				9AB8EC021B29A33C008B31DE /* DetailViewController.xib */,
@@ -386,6 +389,7 @@
 				9AEEB1D11B25C91C00EB1DFD /* HttpService.swift in Sources */,
 				9AEEB1D31B25C96F00EB1DFD /* HousoushitsuBase.swift in Sources */,
 				9ACF59FD1B304CC4005202CC /* BackNumberTableViewCell.swift in Sources */,
+				9ACF5A091B39822A005202CC /* RandomListTableViewController.swift in Sources */,
 				9ACF5A061B38369D005202CC /* SecondBackNumberTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

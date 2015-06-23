@@ -21,8 +21,7 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let searchWord:String! = searchText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
-        let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=10&order=viewCount"
+        setStories()
         
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
@@ -30,15 +29,28 @@ class ListTableViewController: UITableViewController {
         self.tableView.layoutMargins = UIEdgeInsetsZero
         self.tableView.estimatedRowHeight = 200
         self.tableView.rowHeight = UITableViewAutomaticDimension
-
-        HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
-            self.stories = stories
-            println(self.stories)
-        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setSearchText() -> String {
+        let text = searchText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        return text!
+    }
+    
+    func setStories() {
+        let searchWord = setSearchText()
+        let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=10&order=viewCount"
+        
+        println(requestURL)
+        
+        
+        HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
+            self.stories = stories
+            println(self.stories)
+        })
     }
 
     // MARK: - Table view data source

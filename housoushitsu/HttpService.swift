@@ -11,8 +11,10 @@ import UIKit
 
 class HttpService {
     class func getJSON(url: String, callback:((NSArray) -> Void)) {
-        var nsURL = NSURL(string: url)!
-        var session = NSURLSession.sharedSession()
+//        var nsURL = NSURL(string: url)!
+        
+        if let nsURL = NSURL(string: url) {
+            var session = NSURLSession.sharedSession()
         var task = session.dataTaskWithURL(nsURL, completionHandler: { data, response, error -> Void in
             
             if error != nil{
@@ -29,5 +31,7 @@ class HttpService {
             
         })
         task.resume()
+            
+        }
     }
 }
