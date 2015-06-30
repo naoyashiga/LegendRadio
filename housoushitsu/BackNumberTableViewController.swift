@@ -24,10 +24,10 @@ class BackNumberTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBarHidden = true
+        
         let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
-        
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
-        
 
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
@@ -105,5 +105,9 @@ class BackNumberTableViewController: UITableViewController {
         vc.initialIndex = start
         
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }

@@ -21,6 +21,7 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         setStories()
         
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		310C8D1A629F23EB373AA302 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F79E1B2B08B9ECC621AC5C /* libPods.a */; };
+		9A4B23A11B42C09A0032574F /* StoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */; };
 		9AB8EC001B286223008B31DE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EBFF1B286223008B31DE /* Utils.swift */; };
 		9AB8EC031B29A33C008B31DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EC011B29A33C008B31DE /* DetailViewController.swift */; };
 		9AB8EC041B29A33C008B31DE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8EC021B29A33C008B31DE /* DetailViewController.xib */; };
@@ -18,8 +19,6 @@
 		9ACF5A061B38369D005202CC /* SecondBackNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */; };
 		9ACF5A071B38369D005202CC /* SecondBackNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */; };
 		9ACF5A0B1B399016005202CC /* RandomStoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF5A0A1B399016005202CC /* RandomStoryCollectionViewController.swift */; };
-		9ACF5A0E1B399039005202CC /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF5A0C1B399039005202CC /* StoryCollectionViewCell.swift */; };
-		9ACF5A0F1B399039005202CC /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF5A0D1B399039005202CC /* StoryCollectionViewCell.xib */; };
 		9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */; };
 		9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */; };
 		9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AC1B25BB2800EB1DFD /* Main.storyboard */; };
@@ -51,6 +50,7 @@
 		536757F3FC6257EF7145B68B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5C720A021D5FB74F0709AA66 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		94F79E1B2B08B9ECC621AC5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewController.swift; sourceTree = "<group>"; };
 		9AB8EBFF1B286223008B31DE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9AB8EC011B29A33C008B31DE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9AB8EC021B29A33C008B31DE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
@@ -62,8 +62,6 @@
 		9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBackNumberTableViewCell.swift; sourceTree = "<group>"; };
 		9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondBackNumberTableViewCell.xib; sourceTree = "<group>"; };
 		9ACF5A0A1B399016005202CC /* RandomStoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomStoryCollectionViewController.swift; sourceTree = "<group>"; };
-		9ACF5A0C1B399039005202CC /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		9ACF5A0D1B399039005202CC /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AEEB1A31B25BB2800EB1DFD /* housoushitsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = housoushitsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEB1A71B25BB2800EB1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +109,31 @@
 				536757F3FC6257EF7145B68B /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A4B239D1B42B9CB0032574F /* Story */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
+		9A4B23A21B42C0FB0032574F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */,
+				9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		9A4B23A31B42C63E0032574F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8EC011B29A33C008B31DE /* DetailViewController.swift */,
+				9AB8EC021B29A33C008B31DE /* DetailViewController.xib */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		9AB8EBFE1B286204008B31DE /* Helper */ = {
@@ -188,14 +211,12 @@
 		9AEEB1CA1B25C4B100EB1DFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9A4B23A21B42C0FB0032574F /* List */,
+				9A4B239D1B42B9CB0032574F /* Story */,
 				9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */,
 				9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */,
 				9ACF59FB1B304CC4005202CC /* BackNumberTableViewCell.swift */,
 				9ACF59FC1B304CC4005202CC /* BackNumberTableViewCell.xib */,
-				9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */,
-				9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */,
-				9ACF5A0C1B399039005202CC /* StoryCollectionViewCell.swift */,
-				9ACF5A0D1B399039005202CC /* StoryCollectionViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -223,12 +244,12 @@
 		9AEEB1DD1B25CB9B00EB1DFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9A4B23A31B42C63E0032574F /* Detail */,
 				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
-				9AB8EC011B29A33C008B31DE /* DetailViewController.swift */,
-				9AB8EC021B29A33C008B31DE /* DetailViewController.xib */,
 				9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */,
 				9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */,
 				9ACF5A0A1B399016005202CC /* RandomStoryCollectionViewController.swift */,
+				9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -327,7 +348,6 @@
 				9ACF59FE1B304CC4005202CC /* BackNumberTableViewCell.xib in Resources */,
 				9ACF5A071B38369D005202CC /* SecondBackNumberTableViewCell.xib in Resources */,
 				9AEEB1CE1B25C4C500EB1DFD /* ListTableViewCell.xib in Resources */,
-				9ACF5A0F1B399039005202CC /* StoryCollectionViewCell.xib in Resources */,
 				9AB8EC041B29A33C008B31DE /* DetailViewController.xib in Resources */,
 				9AEEB1B31B25BB2800EB1DFD /* LaunchScreen.xib in Resources */,
 				9AEEB1B01B25BB2800EB1DFD /* Images.xcassets in Resources */,
@@ -385,7 +405,6 @@
 				9AEEB1C91B25C48D00EB1DFD /* ListTableViewController.swift in Sources */,
 				9AEEB1DA1B25CA4C00EB1DFD /* Config.swift in Sources */,
 				9AB8EC031B29A33C008B31DE /* DetailViewController.swift in Sources */,
-				9ACF5A0E1B399039005202CC /* StoryCollectionViewCell.swift in Sources */,
 				9AEEB1DC1B25CA7300EB1DFD /* Color.swift in Sources */,
 				9AEEB1D71B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift in Sources */,
 				9ACF59FA1B304C47005202CC /* BackNumberTableViewController.swift in Sources */,
@@ -394,6 +413,7 @@
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
 				9AB8EC001B286223008B31DE /* Utils.swift in Sources */,
 				9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */,
+				9A4B23A11B42C09A0032574F /* StoryTableViewController.swift in Sources */,
 				9AEEB1D11B25C91C00EB1DFD /* HttpService.swift in Sources */,
 				9ACF5A0B1B399016005202CC /* RandomStoryCollectionViewController.swift in Sources */,
 				9AEEB1D31B25C96F00EB1DFD /* HousoushitsuBase.swift in Sources */,
