@@ -20,6 +20,7 @@ class StoryTableViewController: UITableViewController {
     
     let reuseIdentifier = "ListTableViewCell"
     var searchText = ""
+    var index = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +30,7 @@ class StoryTableViewController: UITableViewController {
         
         navigationController?.navigationBarHidden = true
         
-        for i in 1...sectionCount {
-            setStories()
-        }
+        setStories()
         
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
@@ -66,10 +65,13 @@ class StoryTableViewController: UITableViewController {
         let searchWord = setSearchText()
         let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=\(sectionStoriesCount)&order=viewCount"
         
-//        println(searchWord)
-        
         HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
+            self.index++
             self.sections.append(stories)
+            
+            if self.index < self.sectionCount {
+                self.setStories()
+            }
         })
     }
     
