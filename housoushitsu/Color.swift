@@ -25,12 +25,16 @@ extension UIColor {
         }
     }
     
+    class func viewBackgroundColor() -> UIColor {
+        return UIColor.hexStr("000000", alpha: 1)
+    }
+    
     class func cellLightBackgroundColor() -> UIColor {
-        return UIColor.hexStr("ffffff", alpha: 1)
+        return UIColor.hexStr("101010", alpha: 1)
     }
     
     class func cellDarkBackgroundColor() -> UIColor {
-        return UIColor.hexStr("F5F5F5", alpha: 1)
+        return UIColor.hexStr("000000", alpha: 1)
     }
     
     class func tableHeaderBackgroundColor() -> UIColor {

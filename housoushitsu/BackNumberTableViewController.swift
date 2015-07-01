@@ -24,9 +24,11 @@ class BackNumberTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.navigationBarHidden = true
         
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
         let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
+        
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
 
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
@@ -41,6 +43,10 @@ class BackNumberTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        animateTable(customCell: BackNumberTableViewCell(), tableView)
     }
 
     // MARK: - Table view data source
@@ -105,9 +111,5 @@ class BackNumberTableViewController: UITableViewController {
         vc.initialIndex = start
         
         self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
     }
 }

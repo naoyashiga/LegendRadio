@@ -23,7 +23,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="ppc-g9-18D" secondAttribute="centerX" id="INJ-eD-EKs"/>
                 <constraint firstAttribute="centerY" secondItem="ppc-g9-18D" secondAttribute="centerY" id="gRh-QQ-SrH"/>

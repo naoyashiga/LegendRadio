@@ -25,10 +25,15 @@ class StoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
+        self.view.backgroundColor = UIColor.viewBackgroundColor()
         
-//        navigationController?.navigationBarHidden = true
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
+        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
+        
+        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
+//        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
+//        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
         
         setStories()
         
@@ -38,12 +43,17 @@ class StoryTableViewController: UITableViewController {
         self.tableView.layoutMargins = UIEdgeInsetsZero
         self.tableView.estimatedRowHeight = 200
         self.tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        animateTable(customCell: ListTableViewCell(), tableView)
+    }
+    
     // MARK: - Table view data source
     func setSearchText() -> String {
         let storyIndex = arc4random() % 391
@@ -137,9 +147,5 @@ class StoryTableViewController: UITableViewController {
             vc.navigationItem.title = story.title
             self.navigationController?.pushViewController(vc, animated: true)
         
-    }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
     }
 }
