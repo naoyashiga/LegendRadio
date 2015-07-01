@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListTableViewController: UITableViewController {
+class ListTableViewController: BaseTableViewController {
     private var stories:[Story] = [Story]() {
         didSet{
             self.tableView?.reloadData()
@@ -20,20 +20,21 @@ class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         setStories()
         
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
-        self.tableView.layoutMargins = UIEdgeInsetsZero
         self.tableView.estimatedRowHeight = 200
-        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        animateTable(customCell: ListTableViewCell())
     }
     
     func setSearchText() -> String {

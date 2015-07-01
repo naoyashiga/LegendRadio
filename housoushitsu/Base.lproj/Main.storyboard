@@ -4,16 +4,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--放送室-->
         <scene sceneID="rAX-pA-sga">
             <objects>
                 <tabBarController id="sGh-tR-jIy" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="7AQ-wE-ZjH"/>
+                    <navigationItem key="navigationItem" title="放送室" id="7AQ-wE-ZjH"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="jxG-Ge-vOJ">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="jxG-Ge-vOJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="KD5-9l-bqb" kind="relationship" relationship="viewControllers" id="A5Z-YQ-qsM"/>
@@ -54,7 +55,7 @@
         <scene sceneID="oSh-3A-sxT">
             <objects>
                 <navigationController id="P6G-UA-r5r" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Zb-LQ-Lf8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="1Zb-LQ-Lf8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -131,4 +132,5 @@
         <image name="List 2" width="22" height="18"/>
         <image name="Video 2" width="22" height="22"/>
     </resources>
+    <color key="tintColor" red="0.93725490199999995" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

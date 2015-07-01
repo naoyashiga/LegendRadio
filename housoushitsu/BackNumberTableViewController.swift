@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BackNumberTableViewController: UITableViewController {
+class BackNumberTableViewController: BaseTableViewController {
     private let reuseIdentifier = "BackNumberTableViewCell"
     
     private let sections = [
@@ -25,20 +25,14 @@ class BackNumberTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
-        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
-        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
+        let tabBarHeight = tabBarController?.tabBar.frame.size.height
         
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
 
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
-        self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
+        tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
-        self.tableView.layoutMargins = UIEdgeInsetsZero
-        self.tableView.estimatedRowHeight = self.view.frame.height / 20
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        
-        self.navigationItem.title = "バックナンバー"
+        tableView.estimatedRowHeight = view.frame.height / 20
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,7 +40,7 @@ class BackNumberTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        animateTable(customCell: BackNumberTableViewCell(), tableView)
+        animateTable(customCell: BackNumberTableViewCell())
     }
 
     // MARK: - Table view data source

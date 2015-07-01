@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StoryTableViewController: UITableViewController {
+class StoryTableViewController: BaseTableViewController {
     private var sections = [[Story]]() {
         didSet{
             self.tableView?.reloadData()
@@ -25,25 +25,15 @@ class StoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.viewBackgroundColor()
-        
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
-        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
-        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
-        
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
-//        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
-//        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
-        
         setStories()
         
-        var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
-        self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
+        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
         
-        self.tableView.layoutMargins = UIEdgeInsetsZero
-        self.tableView.estimatedRowHeight = 200
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        let userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
+        tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
+        tableView.estimatedRowHeight = 200
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,7 +41,7 @@ class StoryTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        animateTable(customCell: ListTableViewCell(), tableView)
+        animateTable(customCell: ListTableViewCell())
     }
     
     // MARK: - Table view data source

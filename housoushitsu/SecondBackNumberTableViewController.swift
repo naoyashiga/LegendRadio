@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondBackNumberTableViewController: UITableViewController {
+class SecondBackNumberTableViewController: BaseTableViewController {
     private let reuseIdentifier = "BackNumberTableViewCell"
     
     var initialIndex = 0
@@ -16,18 +16,20 @@ class SecondBackNumberTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
-        self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
+        let userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
+        tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
-        self.tableView.layoutMargins = UIEdgeInsetsZero
-        self.tableView.estimatedRowHeight = self.view.frame.height / 10
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = view.frame.height / 10
         
-        self.navigationItem.title = "第\(initialIndex)回-第\(initialIndex + 10)回"
+        navigationItem.title = "第\(initialIndex)回-第\(initialIndex + 10)回"
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        animateTable(customCell: BackNumberTableViewCell())
     }
     
     // MARK: - Table view data source
