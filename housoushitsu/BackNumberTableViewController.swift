@@ -56,6 +56,7 @@ class BackNumberTableViewController: BaseTableViewController {
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
         
+        header.textLabel.font = UIFont(name: "AxisStd-Bold", size: 20)
         header.contentView.backgroundColor = UIColor.tableHeaderBackgroundColor()
         header.textLabel.textColor = UIColor.tableHeaderTextColor()
     }

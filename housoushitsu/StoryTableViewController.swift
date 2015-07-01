@@ -34,6 +34,8 @@ class StoryTableViewController: BaseTableViewController {
         tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
         tableView.estimatedRowHeight = 200
+        
+//        navigationController?.navigationBar.titleTextAttributes = 
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,10 +48,12 @@ class StoryTableViewController: BaseTableViewController {
     
     // MARK: - Table view data source
     func setSearchText() -> String {
-        let storyIndex = arc4random() % 391
+        let storyIndex = arc4random() % 391 + 1
         var searchText = ""
         
-        if storyIndex < 100 {
+        if storyIndex < 10 {
+            searchText = "放送室 00\(storyIndex)"
+        } else if (storyIndex < 100) {
             searchText = "放送室 0\(storyIndex)"
         } else {
             searchText = "放送室 \(storyIndex)"
@@ -86,6 +90,7 @@ class StoryTableViewController: BaseTableViewController {
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
         
+        header.textLabel.font = UIFont(name: "AxisStd-Bold", size: 20)
         header.contentView.backgroundColor = UIColor.tableHeaderBackgroundColor()
         header.textLabel.textColor = UIColor.tableHeaderTextColor()
     }

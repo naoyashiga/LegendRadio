@@ -14,6 +14,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setBackButton()
+        
 //        webView.loadHTMLString("<html><body style=\"(margin:0)\"><embed src=\"https://www.youtube.com/embed/tNT6M-SHuhI?rel=0&amp;showinfo=0\" frameborder=\"0\"></embed></body></html>", baseURL: nil)
         
 //        let mainPlayerViewFrame: CGRect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 3)
@@ -21,6 +23,16 @@ class DetailViewController: UIViewController {
 //        self.view.addSubview(mainPlayerView)
         
 
+    }
+    
+    func setBackButton() {
+        let backButton = UIBarButtonItem(title: "< 戻る", style: UIBarButtonItemStyle.Plain, target: self, action: "goBack")
+        navigationItem.leftBarButtonItem = backButton
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "AxisStd-Medium", size: 15)!], forState: UIControlState.Normal)
+    }
+    
+    func goBack() {
+        navigationController?.popToRootViewControllerAnimated(true)
     }
 
     override func viewDidAppear(animated: Bool) {

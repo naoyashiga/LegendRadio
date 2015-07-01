@@ -26,7 +26,7 @@ class ListTableViewController: BaseTableViewController {
         var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
         self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
-        self.tableView.estimatedRowHeight = 200
+        tableView.estimatedRowHeight = 200
     }
 
     override func didReceiveMemoryWarning() {

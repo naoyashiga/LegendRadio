@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        let font = UIFont(name: "AxisStd-Bold", size: 18)
+        if let font = font {
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.whiteColor()]
+        }
+        
         UITabBar.appearance().tintColor = UIColor.tabBarItemBackgroundColor()
         
         return true

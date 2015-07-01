@@ -4,6 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="axisstd-medium.otf">
+            <string>AxisStd-Medium</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -21,8 +26,8 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="松本人志の放送室 第45回 「松本『携帯の絵文字はもっといいのを考えろ！』」" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJf-Gb-tY9">
-                        <rect key="frame" x="108" y="16" width="204" height="67"/>
-                        <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                        <rect key="frame" x="115" y="16" width="197" height="67"/>
+                        <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -33,9 +38,9 @@
                     <constraint firstItem="NP2-ar-bZw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NPq-VY-zVw"/>
                     <constraint firstItem="LJf-Gb-tY9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Tq7-Dg-FNR"/>
                     <constraint firstAttribute="bottom" secondItem="NP2-ar-bZw" secondAttribute="bottom" constant="1" id="ZEL-vf-Swg"/>
-                    <constraint firstItem="LJf-Gb-tY9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="a0A-lK-3Gp"/>
-                    <constraint firstItem="LJf-Gb-tY9" firstAttribute="leading" secondItem="NP2-ar-bZw" secondAttribute="trailing" constant="8" id="pkN-4J-EVx"/>
+                    <constraint firstItem="LJf-Gb-tY9" firstAttribute="leading" secondItem="NP2-ar-bZw" secondAttribute="trailing" constant="15" id="rF3-qa-vHd"/>
                     <constraint firstItem="NP2-ar-bZw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="trJ-8C-yvi"/>
+                    <constraint firstItem="LJf-Gb-tY9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xMB-TM-9ZZ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

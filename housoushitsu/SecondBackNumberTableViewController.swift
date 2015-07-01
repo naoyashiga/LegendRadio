@@ -21,7 +21,6 @@ class SecondBackNumberTableViewController: BaseTableViewController {
         
         tableView.estimatedRowHeight = view.frame.height / 10
         
-        navigationItem.title = "第\(initialIndex)回-第\(initialIndex + 10)回"
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,6 +30,7 @@ class SecondBackNumberTableViewController: BaseTableViewController {
     override func viewWillAppear(animated: Bool) {
         animateTable(customCell: BackNumberTableViewCell())
     }
+    
     
     // MARK: - Table view data source
     

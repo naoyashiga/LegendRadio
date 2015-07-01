@@ -11,6 +11,8 @@
 		9A4B23A11B42C09A0032574F /* StoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */; };
 		9A4B23A61B440A920032574F /* animateTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B23A51B440A920032574F /* animateTable.swift */; };
 		9A4B23A81B4413100032574F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B23A71B4413100032574F /* BaseTableViewController.swift */; };
+		9A4B23BF1B4421CF0032574F /* axisstd-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4B23BE1B4421CF0032574F /* axisstd-bold.otf */; };
+		9A4B23C11B4421E60032574F /* axisstd-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4B23C01B4421E60032574F /* axisstd-medium.otf */; };
 		9AB8EC001B286223008B31DE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EBFF1B286223008B31DE /* Utils.swift */; };
 		9AB8EC031B29A33C008B31DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8EC011B29A33C008B31DE /* DetailViewController.swift */; };
 		9AB8EC041B29A33C008B31DE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8EC021B29A33C008B31DE /* DetailViewController.xib */; };
@@ -54,6 +56,8 @@
 		9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewController.swift; sourceTree = "<group>"; };
 		9A4B23A51B440A920032574F /* animateTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animateTable.swift; sourceTree = "<group>"; };
 		9A4B23A71B4413100032574F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		9A4B23BE1B4421CF0032574F /* axisstd-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "axisstd-bold.otf"; path = "../axisstd-bold.otf"; sourceTree = "<group>"; };
+		9A4B23C01B4421E60032574F /* axisstd-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "axisstd-medium.otf"; path = "../axisstd-medium.otf"; sourceTree = "<group>"; };
 		9AB8EBFF1B286223008B31DE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9AB8EC011B29A33C008B31DE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9AB8EC021B29A33C008B31DE /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
@@ -146,6 +150,23 @@
 			name = Animation;
 			sourceTree = "<group>";
 		};
+		9A4B23A91B4418B70032574F /* font */ = {
+			isa = PBXGroup;
+			children = (
+				9A4B23BD1B4421A00032574F /* axis */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		9A4B23BD1B4421A00032574F /* axis */ = {
+			isa = PBXGroup;
+			children = (
+				9A4B23C01B4421E60032574F /* axisstd-medium.otf */,
+				9A4B23BE1B4421CF0032574F /* axisstd-bold.otf */,
+			);
+			name = axis;
+			sourceTree = "<group>";
+		};
 		9AB8EBFE1B286204008B31DE /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +200,7 @@
 			children = (
 				9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */,
 				9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */,
+				9A4B23A91B4418B70032574F /* font */,
 				9A4B23A41B440A750032574F /* Animation */,
 				9AEEB1D81B25CA3300EB1DFD /* Config */,
 				9AEEB1DD1B25CB9B00EB1DFD /* Controller */,
@@ -355,6 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4B23C11B4421E60032574F /* axisstd-medium.otf in Resources */,
+				9A4B23BF1B4421CF0032574F /* axisstd-bold.otf in Resources */,
 				9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */,
 				9ACF59FE1B304CC4005202CC /* BackNumberTableViewCell.xib in Resources */,
 				9ACF5A071B38369D005202CC /* SecondBackNumberTableViewCell.xib in Resources */,

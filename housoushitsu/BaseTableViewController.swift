@@ -19,10 +19,22 @@ class BaseTableViewController: UITableViewController {
         
         tableView.layoutMargins = UIEdgeInsetsZero
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        setBackButton()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setBackButton() {
+        let backButton = UIBarButtonItem(title: "< 戻る", style: UIBarButtonItemStyle.Plain, target: self, action: "goBack")
+        navigationItem.leftBarButtonItem = backButton
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "AxisStd-Medium", size: 15)!], forState: UIControlState.Normal)
+    }
+    
+    func goBack() {
+        navigationController?.popToRootViewControllerAnimated(true)
     }
     
     func animateTable<T: UITableViewCell>(#customCell:T) {
