@@ -28,7 +28,7 @@ class StoryTableViewController: UITableViewController {
         let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
         
-        navigationController?.navigationBarHidden = true
+//        navigationController?.navigationBarHidden = true
         
         setStories()
         

@@ -16,8 +16,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="NLx-Na-BWw" kind="relationship" relationship="viewControllers" id="6B5-41-yRQ"/>
-                        <segue destination="KD5-9l-bqb" kind="relationship" relationship="viewControllers" id="WvM-5P-6hR"/>
+                        <segue destination="KD5-9l-bqb" kind="relationship" relationship="viewControllers" id="A5Z-YQ-qsM"/>
+                        <segue destination="NLx-Na-BWw" kind="relationship" relationship="viewControllers" id="GhN-4Z-1YE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJA-cP-ice" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -48,7 +48,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="au6-Pf-FK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="218"/>
+            <point key="canvasLocation" x="1446" y="201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oSh-3A-sxT">
@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="-748" y="-344"/>
         </scene>
-        <!--Item-->
+        <!--ランダム-->
         <scene sceneID="hKz-5m-gzT">
             <objects>
                 <tableViewController id="KD5-9l-bqb" customClass="StoryTableViewController" customModule="housoushitsu" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2eV-qu-EBd">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryTableViewCell" id="2eV-qu-EBd">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2eV-qu-EBd" id="ear-BE-C27">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -90,13 +90,13 @@
                             <outlet property="delegate" destination="KD5-9l-bqb" id="eh4-54-TF2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="udK-X9-n9Z"/>
+                    <tabBarItem key="tabBarItem" title="ランダム" image="Video 2" id="udK-X9-n9Z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lse-d4-Pd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="735" y="-480"/>
         </scene>
-        <!--Item-->
+        <!--バックナンバー-->
         <scene sceneID="XSm-zF-gSo">
             <objects>
                 <tableViewController id="NLx-Na-BWw" customClass="BackNumberTableViewController" customModule="housoushitsu" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell2" id="tJE-j4-8Lg">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BackNumberTableViewCell" id="tJE-j4-8Lg">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tJE-j4-8Lg" id="KpF-Ar-g4h">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -120,11 +120,15 @@
                             <outlet property="delegate" destination="NLx-Na-BWw" id="ema-Ny-V9E"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="301-ET-FuF"/>
+                    <tabBarItem key="tabBarItem" title="バックナンバー" image="List 2" id="301-ET-FuF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cV-8F-RPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784" y="218"/>
+            <point key="canvasLocation" x="743" y="201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="List 2" width="22" height="18"/>
+        <image name="Video 2" width="22" height="22"/>
+    </resources>
 </document>

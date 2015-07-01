@@ -24,7 +24,7 @@ class BackNumberTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBarHidden = true
+//        navigationController?.navigationBarHidden = true
         
         let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
