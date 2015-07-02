@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondBackNumberTableViewCell: UITableViewCell {
+class SecondBackNumberTableViewCell: BaseTableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,8 +17,5 @@ class SecondBackNumberTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-    
 }

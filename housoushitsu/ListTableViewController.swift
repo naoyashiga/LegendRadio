@@ -70,10 +70,8 @@ class ListTableViewController: BaseTableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ListTableViewCell
-        
         let story = stories[indexPath.row]
         
-        println(story.title)
         cell.titleLabel.text = story.title
         cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
         
@@ -93,12 +91,11 @@ class ListTableViewController: BaseTableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ListTableViewCell
-        
         let story = stories[indexPath.row]
-        
         let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        
         vc.navigationItem.title = story.title
         
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

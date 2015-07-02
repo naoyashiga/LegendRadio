@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BackNumberTableViewCell: UITableViewCell {
+class BackNumberTableViewCell: BaseTableViewCell {
     @IBOutlet weak var backNumberLabel: UILabel!
 
     override func awakeFromNib() {
@@ -18,5 +18,4 @@ class BackNumberTableViewCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
 }

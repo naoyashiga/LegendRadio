@@ -45,6 +45,10 @@ extension UIColor {
         return UIColor.hexStr("000000", alpha: 1)
     }
     
+    class func cellSelectedBackgroundColor() -> UIColor {
+        return UIColor.hexStr("EF6C00", alpha: 1)
+    }
+    
     class func tableHeaderBackgroundColor() -> UIColor {
         return UIColor.hexStr("212121", alpha: 1)
     }

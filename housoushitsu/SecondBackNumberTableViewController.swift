@@ -70,8 +70,6 @@ class SecondBackNumberTableViewController: BaseTableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BackNumberTableViewCell
         let start = cell.backNumberLabel.text
-        println(start)
-        
         let vc = ListTableViewController()
         
         var storyIndex = initialIndex + indexPath.row
@@ -86,6 +84,6 @@ class SecondBackNumberTableViewController: BaseTableViewController {
         
         vc.navigationItem.title = "第\(storyIndex)回の検索結果"
         
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

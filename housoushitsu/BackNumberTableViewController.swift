@@ -12,14 +12,14 @@ class BackNumberTableViewController: BaseTableViewController {
     private let reuseIdentifier = "BackNumberTableViewCell"
     
     private let sections = [
-        "第1~50回",
-        "第51~100回",
-        "第101~150回",
-        "第151~200回",
-        "第201~250回",
-        "第251~300回",
-        "第301~350回",
-        "第351~391回",
+        "第1-50回",
+        "第51-100回",
+        "第101-150回",
+        "第151-200回",
+        "第201-250回",
+        "第251-300回",
+        "第301-350回",
+        "第351-391回",
         ]
 
     override func viewDidLoad() {
@@ -101,6 +101,6 @@ class BackNumberTableViewController: BaseTableViewController {
         let vc = SecondBackNumberTableViewController()
         vc.initialIndex = start
         
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

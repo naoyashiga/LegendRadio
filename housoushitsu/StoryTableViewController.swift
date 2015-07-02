@@ -112,17 +112,12 @@ class StoryTableViewController: BaseTableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ListTableViewCell
-        println("indexPath.section")
-        println(indexPath.section)
-        println("indexPath.row")
-        println(indexPath.row)
         
-            let sectionStories = sections[indexPath.section]
-            let story = sectionStories[indexPath.row]
-            
-            println(story.title)
-            cell.titleLabel.text = story.title
-            cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
+        let sectionStories = sections[indexPath.section]
+        let story = sectionStories[indexPath.row]
+        
+        cell.titleLabel.text = story.title
+        cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
         
         cell.layoutIfNeeded()
         
@@ -142,12 +137,10 @@ class StoryTableViewController: BaseTableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ListTableViewCell
         
         let sectionStories = sections[indexPath.section]
+        let story = sectionStories[indexPath.row]
         
-            let story = sectionStories[indexPath.row]
-            
-            let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
-            vc.navigationItem.title = story.title
-            self.navigationController?.pushViewController(vc, animated: true)
-        
+        let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        vc.navigationItem.title = story.title
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

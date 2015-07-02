@@ -18,7 +18,6 @@ class BaseTableViewController: UITableViewController {
         tableView.separatorColor = UIColor.tableViewSeparatorColor()
         
         tableView.layoutMargins = UIEdgeInsetsZero
-//        tableView.rowHeight = UITableViewAutomaticDimension
         
         setBackButton()
     }
@@ -40,7 +39,6 @@ class BaseTableViewController: UITableViewController {
     
     func goBack() {
         navigationController?.popViewControllerAnimated(true)
-//        navigationController?.popToRootViewControllerAnimated(true)
     }
     
     func showActivityIndicator(uiView: UIView) {

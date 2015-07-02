@@ -37,6 +37,7 @@
 		9AEEB1D71B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D61B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift */; };
 		9AEEB1DA1B25CA4C00EB1DFD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D91B25CA4C00EB1DFD /* Config.swift */; };
 		9AEEB1DC1B25CA7300EB1DFD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1DB1B25CA7300EB1DFD /* Color.swift */; };
+		9AF4669D1B4575FA005816CC /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4669C1B4575FA005816CC /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		9AEEB1D61B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousoushitsuObjectHandler.swift; sourceTree = "<group>"; };
 		9AEEB1D91B25CA4C00EB1DFD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		9AEEB1DB1B25CA7300EB1DFD /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9AF4669C1B4575FA005816CC /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 				9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */,
 				9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */,
 				9ACF59FB1B304CC4005202CC /* BackNumberTableViewCell.swift */,
+				9AF4669B1B4575DF005816CC /* Base */,
 				9ACF59FC1B304CC4005202CC /* BackNumberTableViewCell.xib */,
 			);
 			name = View;
@@ -320,6 +323,14 @@
 			isa = PBXGroup;
 			children = (
 				9A4B23A71B4413100032574F /* BaseTableViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		9AF4669B1B4575DF005816CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9AF4669C1B4575FA005816CC /* BaseTableViewCell.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -482,6 +493,7 @@
 				9AEEB1D71B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift in Sources */,
 				9ACF59FA1B304C47005202CC /* BackNumberTableViewController.swift in Sources */,
 				9ACF5A001B3436C8005202CC /* SecondBackNumberTableViewController.swift in Sources */,
+				9AF4669D1B4575FA005816CC /* BaseTableViewCell.swift in Sources */,
 				9A4B23A81B4413100032574F /* BaseTableViewController.swift in Sources */,
 				9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */,
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
