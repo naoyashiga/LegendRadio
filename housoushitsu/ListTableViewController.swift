@@ -37,6 +37,10 @@ class ListTableViewController: BaseTableViewController {
         animateTable(customCell: ListTableViewCell())
     }
     
+    override func goBack() {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     func setSearchText() -> String {
         let text = searchText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
         return text!

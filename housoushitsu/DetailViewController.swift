@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
     }
     
     func goBack() {
-        navigationController?.popToRootViewControllerAnimated(true)
+        navigationController?.popViewControllerAnimated(true)
     }
 
     override func viewDidAppear(animated: Bool) {

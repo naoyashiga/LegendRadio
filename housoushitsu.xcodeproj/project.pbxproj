@@ -278,13 +278,37 @@
 			isa = PBXGroup;
 			children = (
 				9A4B23A31B42C63E0032574F /* Detail */,
-				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
-				9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */,
-				9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */,
-				9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */,
-				9A4B23A71B4413100032574F /* BaseTableViewController.swift */,
+				9AF466881B45570C005816CC /* BackNumber */,
+				9AF466871B4556F6005816CC /* Home */,
+				9AF466891B45571F005816CC /* Base */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		9AF466871B4556F6005816CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */,
+				9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		9AF466881B45570C005816CC /* BackNumber */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
+				9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */,
+			);
+			name = BackNumber;
+			sourceTree = "<group>";
+		};
+		9AF466891B45571F005816CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9A4B23A71B4413100032574F /* BaseTableViewController.swift */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		D8A96687539930A1B4043B6D /* Frameworks */ = {

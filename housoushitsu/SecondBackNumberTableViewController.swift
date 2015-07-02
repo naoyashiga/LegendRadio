@@ -31,6 +31,8 @@ class SecondBackNumberTableViewController: BaseTableViewController {
         animateTable(customCell: BackNumberTableViewCell())
     }
     
+    override func goBack() {
+    }
     
     // MARK: - Table view data source
     
