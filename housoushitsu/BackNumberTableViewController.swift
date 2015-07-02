@@ -19,7 +19,7 @@ class BackNumberTableViewController: BaseTableViewController {
         "第201~250回",
         "第251~300回",
         "第301~350回",
-        "第351~397回",
+        "第351~391回",
         ]
 
     override func viewDidLoad() {
@@ -74,12 +74,12 @@ class BackNumberTableViewController: BaseTableViewController {
         var end = 0
         
         if start == 391 {
-            end = 397
+            cell.backNumberLabel.text = "最終回 第\(start)回"
         }else{
             end = start + 9
+            cell.backNumberLabel.text = "第\(start)回-第\(end)回"
         }
 
-        cell.backNumberLabel.text = "第\(start)回-第\(end)回"
         
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = UIColor.cellLightBackgroundColor()
@@ -97,8 +97,6 @@ class BackNumberTableViewController: BaseTableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BackNumberTableViewCell
         let start = indexPath.section * 50 + indexPath.row * 10 + 1
-        println(start)
-        
         
         let vc = SecondBackNumberTableViewController()
         vc.initialIndex = start

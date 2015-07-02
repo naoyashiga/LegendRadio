@@ -35,16 +35,16 @@ class SecondBackNumberTableViewController: BaseTableViewController {
         return 1
     }
     
-//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return sections[section]
-//    }
-    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return tableView.frame.height / 8
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if initialIndex == 391 {
+            return 1
+        } else {
+            return 10
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
