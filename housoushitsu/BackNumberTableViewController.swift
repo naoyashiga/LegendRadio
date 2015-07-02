@@ -25,12 +25,10 @@ class BackNumberTableViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tabBarHeight = tabBarController?.tabBar.frame.size.height
+        setNib(reuseIdentifier)
         
+        let tabBarHeight = tabBarController?.tabBar.frame.size.height
         tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
-
-        var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
-        tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
         
         tableView.estimatedRowHeight = view.frame.height / 20
     }

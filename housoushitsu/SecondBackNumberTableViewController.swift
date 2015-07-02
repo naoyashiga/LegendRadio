@@ -16,11 +16,9 @@ class SecondBackNumberTableViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
-        tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
+        setNib(reuseIdentifier)
         
         tableView.estimatedRowHeight = view.frame.height / 10
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,9 +27,6 @@ class SecondBackNumberTableViewController: BaseTableViewController {
     
     override func viewWillAppear(animated: Bool) {
         animateTable(customCell: BackNumberTableViewCell())
-    }
-    
-    override func goBack() {
     }
     
     // MARK: - Table view data source

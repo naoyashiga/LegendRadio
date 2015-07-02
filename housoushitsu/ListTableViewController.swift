@@ -22,9 +22,7 @@ class ListTableViewController: BaseTableViewController {
         super.viewDidLoad()
         
         setStories()
-        
-        var userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
-        self.tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
+        setNib(reuseIdentifier)
         
         tableView.estimatedRowHeight = 200
     }
@@ -35,10 +33,6 @@ class ListTableViewController: BaseTableViewController {
     
     override func viewWillAppear(animated: Bool) {
         animateTable(customCell: ListTableViewCell())
-    }
-    
-    override func goBack() {
-        navigationController?.popViewControllerAnimated(true)
     }
     
     func setSearchText() -> String {

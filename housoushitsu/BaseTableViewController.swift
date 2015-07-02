@@ -16,7 +16,6 @@ class BaseTableViewController: UITableViewController {
         view.backgroundColor = UIColor.viewBackgroundColor()
         tableView.separatorColor = UIColor.tableViewSeparatorColor()
         
-        
         tableView.layoutMargins = UIEdgeInsetsZero
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -27,6 +26,11 @@ class BaseTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
+    func setNib(reuseIdentifier: String) {
+        let userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
+        tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
+    }
+    
     func setBackButton() {
         let backButton = UIBarButtonItem(title: "< 戻る", style: UIBarButtonItemStyle.Plain, target: self, action: "goBack")
         navigationItem.leftBarButtonItem = backButton
@@ -34,7 +38,8 @@ class BaseTableViewController: UITableViewController {
     }
     
     func goBack() {
-        navigationController?.popToRootViewControllerAnimated(true)
+        navigationController?.popViewControllerAnimated(true)
+//        navigationController?.popToRootViewControllerAnimated(true)
     }
     
     func animateTable<T: UITableViewCell>(#customCell:T) {

@@ -26,16 +26,12 @@ class StoryTableViewController: BaseTableViewController {
         super.viewDidLoad()
         
         setStories()
+        setNib(reuseIdentifier)
         
         let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
         tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
         
-        let userDetailsNIB = UINib(nibName: reuseIdentifier, bundle: nil)
-        tableView.registerNib(userDetailsNIB, forCellReuseIdentifier: reuseIdentifier)
-        
         tableView.estimatedRowHeight = 200
-        
-//        navigationController?.navigationBar.titleTextAttributes = 
     }
 
     override func didReceiveMemoryWarning() {
