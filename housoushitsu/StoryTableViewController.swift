@@ -31,7 +31,10 @@ class StoryTableViewController: BaseTableViewController {
         let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
         tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
         
-        tableView.estimatedRowHeight = 200
+//        tableView.estimatedRowHeight = 200
+//        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        showActivityIndicator(view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +44,7 @@ class StoryTableViewController: BaseTableViewController {
     override func viewWillAppear(animated: Bool) {
         animateTable(customCell: ListTableViewCell())
     }
+    
     
     // MARK: - Table view data source
     func setSearchText() -> String {
@@ -71,6 +75,9 @@ class StoryTableViewController: BaseTableViewController {
             
             if self.index < self.sectionCount {
                 self.setStories()
+            } else {
+                println("finish")
+                self.activityIndicator.stopAnimating()
             }
         })
     }
@@ -89,6 +96,10 @@ class StoryTableViewController: BaseTableViewController {
         header.textLabel.font = UIFont(name: "AxisStd-Bold", size: 20)
         header.contentView.backgroundColor = UIColor.tableHeaderBackgroundColor()
         header.textLabel.textColor = UIColor.tableHeaderTextColor()
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return tableView.frame.height / 6
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

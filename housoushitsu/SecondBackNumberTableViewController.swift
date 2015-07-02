@@ -18,7 +18,7 @@ class SecondBackNumberTableViewController: BaseTableViewController {
         
         setNib(reuseIdentifier)
         
-        tableView.estimatedRowHeight = view.frame.height / 10
+//        tableView.estimatedRowHeight = 150
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +38,10 @@ class SecondBackNumberTableViewController: BaseTableViewController {
 //    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        return sections[section]
 //    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return tableView.frame.height / 8
+    }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

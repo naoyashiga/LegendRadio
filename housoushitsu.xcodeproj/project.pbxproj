@@ -49,6 +49,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9AF466991B455E2B005816CC /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		536757F3FC6257EF7145B68B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5C720A021D5FB74F0709AA66 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -331,6 +344,7 @@
 				9AEEB1A01B25BB2800EB1DFD /* Frameworks */,
 				9AEEB1A11B25BB2800EB1DFD /* Resources */,
 				2F18CD0AA6B7F310ED591AD1 /* Copy Pods Resources */,
+				9AF466991B455E2B005816CC /* Copy Frameworks */,
 			);
 			buildRules = (
 			);

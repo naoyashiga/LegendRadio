@@ -19,6 +19,7 @@ class Story: HousoushitsuBase {
         self.title = Utils.getStringFromJSON(snippet, key: "title")
         
         self.url = snippet.valueForKeyPath("thumbnails.default.url") as! String
+//        self.url = snippet.valueForKeyPath("thumbnails.medium.url") as! String
 //        let defaultDictinary = data["snippet"]["thumbnails"]["default"] as! NSDictionary
 //        self.url = Utils.getStringFromJSON(defaultDictinary, key: "url")
         println(self.title)

@@ -9,6 +9,7 @@
 import UIKit
 
 class BaseTableViewController: UITableViewController {
+    var activityIndicator = UIActivityIndicatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,7 @@ class BaseTableViewController: UITableViewController {
         tableView.separatorColor = UIColor.tableViewSeparatorColor()
         
         tableView.layoutMargins = UIEdgeInsetsZero
-        tableView.rowHeight = UITableViewAutomaticDimension
+//        tableView.rowHeight = UITableViewAutomaticDimension
         
         setBackButton()
     }
@@ -40,6 +41,16 @@ class BaseTableViewController: UITableViewController {
     func goBack() {
         navigationController?.popViewControllerAnimated(true)
 //        navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    func showActivityIndicator(uiView: UIView) {
+        activityIndicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+        activityIndicator.center = uiView.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle =
+            UIActivityIndicatorViewStyle.WhiteLarge
+        uiView.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
     }
     
     func animateTable<T: UITableViewCell>(#customCell:T) {

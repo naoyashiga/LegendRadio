@@ -23,8 +23,9 @@ class ListTableViewController: BaseTableViewController {
         
         setStories()
         setNib(reuseIdentifier)
+        showActivityIndicator(view)
         
-        tableView.estimatedRowHeight = 200
+//        tableView.estimatedRowHeight = 200
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,12 +50,16 @@ class ListTableViewController: BaseTableViewController {
         
         HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
             self.stories = stories
-            println(self.stories)
+            self.activityIndicator.stopAnimating()
         })
     }
 
     // MARK: - Table view data source
 
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return tableView.frame.height / 6
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
