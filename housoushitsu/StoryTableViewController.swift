@@ -76,7 +76,7 @@ class StoryTableViewController: BaseTableViewController {
             if self.index < self.sectionCount {
                 self.setStories()
             } else {
-                println("finish")
+//                println("finish")
                 self.activityIndicator.stopAnimating()
             }
         })

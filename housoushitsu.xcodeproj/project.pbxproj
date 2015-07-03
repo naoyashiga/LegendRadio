@@ -132,13 +132,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9A4B239D1B42B9CB0032574F /* Story */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Story;
-			sourceTree = "<group>";
-		};
 		9A4B23A21B42C0FB0032574F /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				9A4B23A21B42C0FB0032574F /* List */,
-				9A4B239D1B42B9CB0032574F /* Story */,
 				9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */,
 				9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */,
 				9ACF59FB1B304CC4005202CC /* BackNumberTableViewCell.swift */,
@@ -395,6 +387,11 @@
 				TargetAttributes = {
 					9AEEB1A21B25BB2800EB1DFD = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					9AEEB1B71B25BB2800EB1DFD = {
 						CreatedOnToolsVersion = 6.3.2;

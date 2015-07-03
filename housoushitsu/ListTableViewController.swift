@@ -45,7 +45,7 @@ class ListTableViewController: BaseTableViewController {
         let searchWord = setSearchText()
         let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=10&order=viewCount"
         
-        println(requestURL)
+//        println(requestURL)
         
         
         HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in

@@ -33,7 +33,7 @@ class HousoushitsuObjectHandler {
     
     class func getStories(url: String, callback:(([Story]) -> Void)){
         var stories = [Story]()
-        println(url)
+//        println(url)
         
         HttpService.getJSON(url){ (jsonData) -> Void in
             
