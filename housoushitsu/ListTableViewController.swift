@@ -43,7 +43,7 @@ class ListTableViewController: BaseTableViewController {
     
     func setStories() {
         let searchWord = setSearchText()
-        let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=10"
+        let requestURL = Config.REQUEST_SEARCH_URL + "q=\(searchWord)&part=snippet&maxResults=10"
         
 //        println(requestURL)
         

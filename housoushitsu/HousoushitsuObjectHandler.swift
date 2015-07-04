@@ -50,4 +50,40 @@ class HousoushitsuObjectHandler {
             })
         }
     }
+    
+    class func getContentDetails(url: String, callback:(([ContentDetails]) -> Void)){
+        var contentDetails = [ContentDetails]()
+        
+        HttpService.getJSON(url){ (jsonData) -> Void in
+            for contentDetailsData in jsonData {
+                let duration = ContentDetails(data: contentDetailsData as! NSDictionary)
+                contentDetails.append(duration)
+            }
+            
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0), { () -> Void in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    callback(contentDetails)
+                })
+            })
+        }
+    }
+    
+    class func getStatistics(url: String, callback:(([Statistics]) -> Void)){
+        var statistics = [Statistics]()
+        
+        HttpService.getJSON(url){ (jsonData) -> Void in
+            for statisticsData in jsonData {
+                let result = Statistics(data: statisticsData as! NSDictionary)
+                statistics.append(result)
+            }
+            
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0), { () -> Void in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    callback(statistics)
+                })
+            })
+        }
+    }
 }

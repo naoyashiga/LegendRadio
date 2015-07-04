@@ -21,6 +21,8 @@ class StoryTableViewController: BaseTableViewController {
     let reuseIdentifier = "ListTableViewCell"
     var searchText = ""
     var index = 0
+    
+//    var contentDetails = [ContentDetails]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +69,7 @@ class StoryTableViewController: BaseTableViewController {
     
     func setStories() {
         let searchWord = setSearchText()
-        let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=\(sectionStoriesCount)"
+        let requestURL = Config.REQUEST_SEARCH_URL + "q=\(searchWord)&part=snippet&maxResults=\(sectionStoriesCount)"
         
         HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
             self.index++
@@ -79,6 +81,22 @@ class StoryTableViewController: BaseTableViewController {
 //                println("finish")
                 self.activityIndicator.stopAnimating()
             }
+        })
+    }
+    
+    func getDurationTimes(videoID: String, callback:(([ContentDetails]) -> Void)) {
+        let contentsDetailURL = Config.REQUEST_CONTENT_DETAILS_URL + "id=\(videoID)"
+        
+        HousoushitsuObjectHandler.getContentDetails(contentsDetailURL, callback: {(contentDetails) -> Void in
+            callback(contentDetails)
+        })
+    }
+    
+    func getStatistics(videoID: String, callback:(([Statistics]) -> Void)) {
+        let statisticsURL = Config.REQUEST_STATISTICS_URL + "id=\(videoID)"
+        
+        HousoushitsuObjectHandler.getStatistics(statisticsURL, callback: {(statistics) -> Void in
+            callback(statistics)
         })
     }
     
@@ -119,6 +137,18 @@ class StoryTableViewController: BaseTableViewController {
         cell.titleLabel.text = story.title
         cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
         
+        getDurationTimes(story.videoId, callback: { (contentDetails) -> Void in
+            //PT2H10M11S
+            let duration = contentDetails[0].duration
+            let text = self.getDurationStr(duration)
+        })
+        
+        getStatistics(story.videoId, callback: { (statistics) -> Void in
+            let viewCount = statistics[0].viewCount
+            let likeCount = statistics[0].likeCount
+            println(viewCount)
+        })
+        
         cell.layoutIfNeeded()
         
         if indexPath.row % 2 == 0 {
@@ -143,5 +173,30 @@ class StoryTableViewController: BaseTableViewController {
         vc.videoId = story.videoId
         vc.navigationItem.title = story.title
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func getDurationStr(nonFormatStr: String) -> String {
+        let pH = "H"
+        let pM = "M"
+        let pS = "S"
+        
+        let pattern = "[PT|S]"
+        
+        let rH = "時間"
+        let rM = "分"
+        let rS = "秒"
+        let replace = ""
+        
+        var replaceString = doReplace(str: nonFormatStr, pattern: pH, replaceStr: rH)
+        replaceString = doReplace(str: replaceString, pattern: pM, replaceStr: rM)
+        replaceString = doReplace(str: replaceString, pattern: pS, replaceStr: rS)
+        replaceString = doReplace(str: replaceString, pattern: pattern, replaceStr: replace)
+        
+        return replaceString
+    }
+    
+    func doReplace(#str:String, pattern: String, replaceStr: String) -> String {
+        return str.stringByReplacingOccurrencesOfString(pattern, withString: replaceStr, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
+        
     }
 }

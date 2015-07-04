@@ -44,6 +44,8 @@
 		9AF466AB1B46C39C005816CC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF466AA1B46C39C005816CC /* MediaPlayer.framework */; };
 		9AF466AD1B46C3A4005816CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF466AC1B46C3A4005816CC /* UIKit.framework */; };
 		9AF466B61B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466B51B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m */; };
+		9AF466B81B47BCC5005816CC /* ContentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466B71B47BCC5005816CC /* ContentDetails.swift */; };
+		9AF466BF1B47E9CE005816CC /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466BE1B47E9CE005816CC /* Statistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		9AF466AC1B46C3A4005816CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9AF466B41B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPMoviePlayerController+BackgroundPlayback.h"; sourceTree = "<group>"; };
 		9AF466B51B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+BackgroundPlayback.m"; sourceTree = "<group>"; };
+		9AF466B71B47BCC5005816CC /* ContentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDetails.swift; sourceTree = "<group>"; };
+		9AF466BE1B47E9CE005816CC /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,9 +289,9 @@
 		9AEEB1CF1B25C90200EB1DFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9AF466B91B47BDDC005816CC /* video Data */,
 				9AEEB1D21B25C96F00EB1DFD /* HousoushitsuBase.swift */,
 				9AEEB1D61B25C9F800EB1DFD /* HousoushitsuObjectHandler.swift */,
-				9AEEB1D41B25C9B200EB1DFD /* Story.swift */,
 				9AEEB1D01B25C91C00EB1DFD /* HttpService.swift */,
 			);
 			name = Model;
@@ -345,6 +349,16 @@
 				9AF4669C1B4575FA005816CC /* BaseTableViewCell.swift */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		9AF466B91B47BDDC005816CC /* video Data */ = {
+			isa = PBXGroup;
+			children = (
+				9AEEB1D41B25C9B200EB1DFD /* Story.swift */,
+				9AF466B71B47BCC5005816CC /* ContentDetails.swift */,
+				9AF466BE1B47E9CE005816CC /* Statistics.swift */,
+			);
+			name = "video Data";
 			sourceTree = "<group>";
 		};
 		D8A96687539930A1B4043B6D /* Frameworks */ = {
@@ -516,11 +530,13 @@
 				9ACF59FA1B304C47005202CC /* BackNumberTableViewController.swift in Sources */,
 				9ACF5A001B3436C8005202CC /* SecondBackNumberTableViewController.swift in Sources */,
 				9AF4669D1B4575FA005816CC /* BaseTableViewCell.swift in Sources */,
+				9AF466BF1B47E9CE005816CC /* Statistics.swift in Sources */,
 				9A4B23A81B4413100032574F /* BaseTableViewController.swift in Sources */,
 				9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */,
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
 				9AB8EC001B286223008B31DE /* Utils.swift in Sources */,
 				9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */,
+				9AF466B81B47BCC5005816CC /* ContentDetails.swift in Sources */,
 				9A4B23A61B440A920032574F /* animateTable.swift in Sources */,
 				9A4B23A11B42C09A0032574F /* StoryTableViewController.swift in Sources */,
 				9AEEB1D11B25C91C00EB1DFD /* HttpService.swift in Sources */,
