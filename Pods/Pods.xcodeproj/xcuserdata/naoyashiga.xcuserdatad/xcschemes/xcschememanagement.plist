@@ -8,37 +8,31 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-XCDYouTubeKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1FD1E572C03EA794BB014D38</key>
+		<key>364BB9700499C34ECF38FB4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6532B49C03254C43D1B7CD40</key>
+		<key>4418602DE05FAA7ED6D7CBDA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F41003C14669C203DC666A90</key>
+		<key>889EBF805A6666CAA72F1D14</key>
 		<dict>
 			<key>primary</key>
 			<true/>

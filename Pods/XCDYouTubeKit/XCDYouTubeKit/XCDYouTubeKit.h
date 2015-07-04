@@ -9,6 +9,7 @@
 #import <XCDYouTubeKit/XCDYouTubeOperation.h>
 #import <XCDYouTubeKit/XCDYouTubeVideo.h>
 #import <XCDYouTubeKit/XCDYouTubeVideoOperation.h>
+#import <XCDYouTubeKit/MPMoviePlayerController+BackgroundPlayback.h>
 
 #if TARGET_OS_IPHONE
 #import <XCDYouTubeKit/XCDYouTubeVideoPlayerViewController.h>

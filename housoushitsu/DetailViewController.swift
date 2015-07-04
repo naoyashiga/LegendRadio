@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var playerView: UIView!
@@ -16,13 +17,15 @@ class DetailViewController: UIViewController {
         
         setBackButton()
         
-//        webView.loadHTMLString("<html><body style=\"(margin:0)\"><embed src=\"https://www.youtube.com/embed/tNT6M-SHuhI?rel=0&amp;showinfo=0\" frameborder=\"0\"></embed></body></html>", baseURL: nil)
+        var audioSession = AVAudioSession.sharedInstance()
+        audioSession.setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        audioSession.setActive(true, error: nil)
         
-//        let mainPlayerViewFrame: CGRect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 3)
-//        let mainPlayerView: UIView = UIView(frame: mainPlayerViewFrame)
-//        self.view.addSubview(mainPlayerView)
-        
-
+        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
+        var newTaskId = UIBackgroundTaskInvalid
+        newTaskId = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({ () -> Void in
+            return
+        })
     }
     
     func setBackButton() {
@@ -36,17 +39,14 @@ class DetailViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-//        let mainPlayerViewFrame: CGRect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height / 3)
-//        let mainPlayerView: UIView = UIView(frame: mainPlayerViewFrame)
-//        self.view.addSubview(mainPlayerView)
         
         let idVideo = "tNT6M-SHuhI"
         var videoPlayerViewController: XCDYouTubeVideoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: idVideo);
-//        videoPlayerViewController.presentInView(mainPlayerView);
+        
+        videoPlayerViewController.moviePlayer.backgroundPlaybackEnabled = true
         videoPlayerViewController.presentInView(playerView);
         videoPlayerViewController.moviePlayer.controlStyle = MPMovieControlStyle.Embedded
         videoPlayerViewController.moviePlayer.play()
-//        self.view.addSubview(videoPlayerViewController.view)
     }
     
     override func didReceiveMemoryWarning() {

@@ -38,6 +38,12 @@
 		9AEEB1DA1B25CA4C00EB1DFD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1D91B25CA4C00EB1DFD /* Config.swift */; };
 		9AEEB1DC1B25CA7300EB1DFD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1DB1B25CA7300EB1DFD /* Color.swift */; };
 		9AF4669D1B4575FA005816CC /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4669C1B4575FA005816CC /* BaseTableViewCell.swift */; };
+		9AF466A51B46C381005816CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF466A41B46C381005816CC /* AVFoundation.framework */; };
+		9AF466A71B46C38C005816CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF466A61B46C38C005816CC /* CoreGraphics.framework */; };
+		9AF466A91B46C394005816CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF466A81B46C394005816CC /* Foundation.framework */; };
+		9AF466AB1B46C39C005816CC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF466AA1B46C39C005816CC /* MediaPlayer.framework */; };
+		9AF466AD1B46C3A4005816CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF466AC1B46C3A4005816CC /* UIKit.framework */; };
+		9AF466B61B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466B51B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +108,13 @@
 		9AEEB1D91B25CA4C00EB1DFD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		9AEEB1DB1B25CA7300EB1DFD /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9AF4669C1B4575FA005816CC /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		9AF466A41B46C381005816CC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9AF466A61B46C38C005816CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9AF466A81B46C394005816CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9AF466AA1B46C39C005816CC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9AF466AC1B46C3A4005816CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9AF466B41B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPMoviePlayerController+BackgroundPlayback.h"; sourceTree = "<group>"; };
+		9AF466B51B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+BackgroundPlayback.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF466AD1B46C3A4005816CC /* UIKit.framework in Frameworks */,
+				9AF466AB1B46C39C005816CC /* MediaPlayer.framework in Frameworks */,
+				9AF466A91B46C394005816CC /* Foundation.framework in Frameworks */,
+				9AF466A71B46C38C005816CC /* CoreGraphics.framework in Frameworks */,
+				9AF466A51B46C381005816CC /* AVFoundation.framework in Frameworks */,
 				310C8D1A629F23EB373AA302 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +246,8 @@
 			children = (
 				9AEEB1A71B25BB2800EB1DFD /* Info.plist */,
 				9AB8EC061B29AFE5008B31DE /* housoushitsu-Bridging-Header.h */,
+				9AF466B41B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.h */,
+				9AF466B51B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -330,6 +350,11 @@
 		D8A96687539930A1B4043B6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AF466AC1B46C3A4005816CC /* UIKit.framework */,
+				9AF466AA1B46C39C005816CC /* MediaPlayer.framework */,
+				9AF466A81B46C394005816CC /* Foundation.framework */,
+				9AF466A61B46C38C005816CC /* CoreGraphics.framework */,
+				9AF466A41B46C381005816CC /* AVFoundation.framework */,
 				94F79E1B2B08B9ECC621AC5C /* libPods.a */,
 			);
 			name = Frameworks;
@@ -500,6 +525,7 @@
 				9A4B23A11B42C09A0032574F /* StoryTableViewController.swift in Sources */,
 				9AEEB1D11B25C91C00EB1DFD /* HttpService.swift in Sources */,
 				9AEEB1D31B25C96F00EB1DFD /* HousoushitsuBase.swift in Sources */,
+				9AF466B61B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m in Sources */,
 				9ACF59FD1B304CC4005202CC /* BackNumberTableViewCell.swift in Sources */,
 				9ACF5A061B38369D005202CC /* SecondBackNumberTableViewCell.swift in Sources */,
 			);
@@ -631,6 +657,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,6 +674,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
