@@ -92,7 +92,7 @@
                             <outlet property="delegate" destination="KD5-9l-bqb" id="eh4-54-TF2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="ランダム" image="Video 2" id="udK-X9-n9Z"/>
+                    <tabBarItem key="tabBarItem" title="ランダム" image="home" selectedImage="home" id="udK-X9-n9Z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lse-d4-Pd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +122,7 @@
                             <outlet property="delegate" destination="NLx-Na-BWw" id="ema-Ny-V9E"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="バックナンバー" image="List 2" id="301-ET-FuF"/>
+                    <tabBarItem key="tabBarItem" title="バックナンバー" image="list" id="301-ET-FuF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cV-8F-RPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,8 +130,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="List 2" width="22" height="18"/>
-        <image name="Video 2" width="22" height="22"/>
+        <image name="home" width="32" height="32"/>
+        <image name="list" width="24" height="32"/>
     </resources>
     <color key="tintColor" red="0.93725490199999995" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
