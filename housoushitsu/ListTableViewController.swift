@@ -43,10 +43,9 @@ class ListTableViewController: BaseTableViewController {
     
     func setStories() {
         let searchWord = setSearchText()
-        let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=10&order=viewCount"
+        let requestURL = Config.REQUEST_BASE_URL + "q=\(searchWord)&part=snippet&maxResults=10"
         
 //        println(requestURL)
-        
         
         HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
             self.stories = stories
@@ -94,6 +93,7 @@ class ListTableViewController: BaseTableViewController {
         let story = stories[indexPath.row]
         let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
         
+        vc.videoId = story.videoId
         vc.navigationItem.title = story.title
         
         navigationController?.pushViewController(vc, animated: true)

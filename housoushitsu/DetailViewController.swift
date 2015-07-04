@@ -11,6 +11,7 @@ import AVFoundation
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var playerView: UIView!
+    var videoId = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +41,8 @@ class DetailViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         
-        let idVideo = "tNT6M-SHuhI"
-        var videoPlayerViewController: XCDYouTubeVideoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: idVideo);
+//        let idVideo = "tNT6M-SHuhI"
+        var videoPlayerViewController: XCDYouTubeVideoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: videoId);
         
         videoPlayerViewController.moviePlayer.backgroundPlaybackEnabled = true
         videoPlayerViewController.presentInView(playerView);
