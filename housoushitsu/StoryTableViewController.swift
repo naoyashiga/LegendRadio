@@ -140,13 +140,14 @@ class StoryTableViewController: BaseTableViewController {
         getDurationTimes(story.videoId, callback: { (contentDetails) -> Void in
             //PT2H10M11S
             let duration = contentDetails[0].duration
-            let text = self.getDurationStr(duration)
+            cell.durationLabel.text = self.getDurationStr(duration)
         })
         
         getStatistics(story.videoId, callback: { (statistics) -> Void in
-            let viewCount = statistics[0].viewCount
-            let likeCount = statistics[0].likeCount
-            println(viewCount)
+//            let viewCount = statistics[0].viewCount
+//            let likeCount = statistics[0].likeCount
+            cell.viewCountLabel.text = statistics[0].viewCount
+            cell.likeCountLabel.text = statistics[0].likeCount
         })
         
         cell.layoutIfNeeded()

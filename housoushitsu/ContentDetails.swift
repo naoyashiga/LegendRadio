@@ -13,7 +13,12 @@ class ContentDetails: HousoushitsuBase {
     
     override init(data: NSDictionary) {
         super.init(data: data)
-        let contentsDetails = data["contentDetails"] as! NSDictionary
-        duration = contentsDetails.valueForKeyPath("duration") as! String
+//        let contentsDetails = data["contentDetails"] as! NSDictionary
+        
+        if let contentsDetails = data["contentDetails"] as? NSDictionary {
+            if let d = contentsDetails.valueForKeyPath("duration") as? String {
+                duration = d
+            }
+        }
     }
 }

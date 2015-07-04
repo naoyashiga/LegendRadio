@@ -92,7 +92,7 @@
                             <outlet property="delegate" destination="KD5-9l-bqb" id="eh4-54-TF2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="ランダム" image="home" selectedImage="home" id="udK-X9-n9Z"/>
+                    <tabBarItem key="tabBarItem" title="ランダム" image="home" id="udK-X9-n9Z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lse-d4-Pd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
