@@ -26,7 +26,7 @@ extension UIColor {
     }
     
     class func viewBackgroundColor() -> UIColor {
-        return UIColor.hexStr("000000", alpha: 1)
+        return UIColor.hexStr("e5e5e5", alpha: 1)
     }
     
     class func tabBarItemBackgroundColor() -> UIColor {

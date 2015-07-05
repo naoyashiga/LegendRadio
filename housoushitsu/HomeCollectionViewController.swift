@@ -36,6 +36,12 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
         cellWidth = view.bounds.width
         cellHeight = view.bounds.height / 8
         
+        let tabBarHeight = self.tabBarController?.tabBar.frame.size.height
+        collectionView?.contentInset = UIEdgeInsetsMake(10, cellHorizontalMargin / 2, tabBarHeight!, cellHorizontalMargin / 2)
+        
+        
+        collectionView?.backgroundColor = UIColor.viewBackgroundColor()
+        
         setStories()
         
         collectionView?.registerNib(UINib(nibName: reuseIdentifier_homeHeaderView, bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: reuseIdentifier_homeHeaderView)
@@ -120,6 +126,13 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
                 headerView.headerTitleLabel.text = queries[indexPath.section]
             }
             
+            let cornerRadius: CGFloat = 5.0
+            let maskPath = UIBezierPath(roundedRect: headerView.bounds, byRoundingCorners: (UIRectCorner.TopLeft | UIRectCorner.TopRight), cornerRadii: CGSizeMake(cornerRadius, cornerRadius))
+            let maskLayer = CAShapeLayer()
+            maskLayer.frame = headerView.bounds
+            maskLayer.path = maskPath.CGPath
+            headerView.layer.mask = maskLayer
+            
             return headerView
             
         default:
@@ -127,11 +140,6 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
         }
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        
-//        return CGSize(width: cellWidth - cellHorizontalMargin, height: cellHeight / 3)
-        return CGSize(width: 100, height: 50)
-    }
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
@@ -163,6 +171,12 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier_viewoListCell, forIndexPath: indexPath) as! VideoListCollectionViewCell
     }
     
+    // MARK: UICollectionViewDelegateFlowLayout
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        return CGSize(width: cellWidth, height: 45)
+    }
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize(width: cellWidth - cellHorizontalMargin, height: cellHeight)
     }
@@ -176,7 +190,7 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 15, right: 0)
     }
     
     func getDurationStr(nonFormatStr: String) -> String {

@@ -26,13 +26,13 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="松本人志の放送室 第45回 「松本『携帯の絵文字はもっといいのを考えろ！』」" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-Ck-pDo" userLabel="Title">
                         <rect key="frame" x="153" y="14" width="149" height="66"/>
                         <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.25490196078431371" green="0.26666666666666666" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.98027151823043823" green="0.98024213314056396" blue="0.98025882244110107" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="dhZ-xV-M5F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2uS-Uv-ByT"/>
                 <constraint firstAttribute="trailing" secondItem="kcE-Ck-pDo" secondAttribute="trailing" constant="8" id="4vq-cG-vlT"/>

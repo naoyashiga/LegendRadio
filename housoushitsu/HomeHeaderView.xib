@@ -16,13 +16,13 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第0回" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOX-qA-ADG">
-                    <rect key="frame" x="8" y="14" width="46" height="21"/>
-                    <fontDescription key="fontDescription" name="AxisStd-Bold" family="AXIS Std" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <rect key="frame" x="8" y="14" width="41" height="21"/>
+                    <fontDescription key="fontDescription" name="AxisStd-Bold" family="AXIS Std" pointSize="15"/>
+                    <color key="textColor" red="0.98027151820000002" green="0.98024213309999997" blue="0.98025882239999995" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.86303766393862402" blue="0.74702250874125875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.55294117647058827" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="eOX-qA-ADG" secondAttribute="bottom" constant="15" id="LF0-TX-IiE"/>
                 <constraint firstItem="eOX-qA-ADG" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="QM6-9Z-XAK"/>
