@@ -46,6 +46,12 @@
 		9AF466B61B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466B51B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m */; };
 		9AF466B81B47BCC5005816CC /* ContentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466B71B47BCC5005816CC /* ContentDetails.swift */; };
 		9AF466BF1B47E9CE005816CC /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466BE1B47E9CE005816CC /* Statistics.swift */; };
+		9AF466C11B480A94005816CC /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466C01B480A93005816CC /* HomeCollectionViewController.swift */; };
+		9AF466C41B481D72005816CC /* VideoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466C21B481D72005816CC /* VideoListCollectionViewCell.swift */; };
+		9AF466C51B481D72005816CC /* VideoListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF466C31B481D72005816CC /* VideoListCollectionViewCell.xib */; };
+		9AF466C71B481E23005816CC /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466C61B481E23005816CC /* BaseCollectionViewController.swift */; };
+		9AF466CA1B482A0F005816CC /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF466C81B482A0F005816CC /* HomeHeaderView.swift */; };
+		9AF466CB1B482A0F005816CC /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AF466C91B482A0F005816CC /* HomeHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +125,12 @@
 		9AF466B51B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+BackgroundPlayback.m"; sourceTree = "<group>"; };
 		9AF466B71B47BCC5005816CC /* ContentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDetails.swift; sourceTree = "<group>"; };
 		9AF466BE1B47E9CE005816CC /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		9AF466C01B480A93005816CC /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		9AF466C21B481D72005816CC /* VideoListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AF466C31B481D72005816CC /* VideoListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoListCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AF466C61B481E23005816CC /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		9AF466C81B482A0F005816CC /* HomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		9AF466C91B482A0F005816CC /* HomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +171,10 @@
 			children = (
 				9AEEB1CB1B25C4C500EB1DFD /* ListTableViewCell.swift */,
 				9AEEB1CC1B25C4C500EB1DFD /* ListTableViewCell.xib */,
+				9AF466C21B481D72005816CC /* VideoListCollectionViewCell.swift */,
+				9AF466C31B481D72005816CC /* VideoListCollectionViewCell.xib */,
+				9AF466C81B482A0F005816CC /* HomeHeaderView.swift */,
+				9AF466C91B482A0F005816CC /* HomeHeaderView.xib */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -322,6 +338,7 @@
 			children = (
 				9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */,
 				9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */,
+				9AF466C01B480A93005816CC /* HomeCollectionViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -339,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				9A4B23A71B4413100032574F /* BaseTableViewController.swift */,
+				9AF466C61B481E23005816CC /* BaseCollectionViewController.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -462,6 +480,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF466C51B481D72005816CC /* VideoListCollectionViewCell.xib in Resources */,
 				9A4B23C11B4421E60032574F /* axisstd-medium.otf in Resources */,
 				9A4B23BF1B4421CF0032574F /* axisstd-bold.otf in Resources */,
 				9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */,
@@ -471,6 +490,7 @@
 				9AB8EC041B29A33C008B31DE /* DetailViewController.xib in Resources */,
 				9AEEB1B31B25BB2800EB1DFD /* LaunchScreen.xib in Resources */,
 				9AEEB1B01B25BB2800EB1DFD /* Images.xcassets in Resources */,
+				9AF466CB1B482A0F005816CC /* HomeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +550,10 @@
 				9ACF59FA1B304C47005202CC /* BackNumberTableViewController.swift in Sources */,
 				9ACF5A001B3436C8005202CC /* SecondBackNumberTableViewController.swift in Sources */,
 				9AF4669D1B4575FA005816CC /* BaseTableViewCell.swift in Sources */,
+				9AF466C71B481E23005816CC /* BaseCollectionViewController.swift in Sources */,
 				9AF466BF1B47E9CE005816CC /* Statistics.swift in Sources */,
+				9AF466C41B481D72005816CC /* VideoListCollectionViewCell.swift in Sources */,
+				9AF466CA1B482A0F005816CC /* HomeHeaderView.swift in Sources */,
 				9A4B23A81B4413100032574F /* BaseTableViewController.swift in Sources */,
 				9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */,
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
@@ -542,6 +565,7 @@
 				9AEEB1D11B25C91C00EB1DFD /* HttpService.swift in Sources */,
 				9AEEB1D31B25C96F00EB1DFD /* HousoushitsuBase.swift in Sources */,
 				9AF466B61B47A8AC005816CC /* MPMoviePlayerController+BackgroundPlayback.m in Sources */,
+				9AF466C11B480A94005816CC /* HomeCollectionViewController.swift in Sources */,
 				9ACF59FD1B304CC4005202CC /* BackNumberTableViewCell.swift in Sources */,
 				9ACF5A061B38369D005202CC /* SecondBackNumberTableViewCell.swift in Sources */,
 			);

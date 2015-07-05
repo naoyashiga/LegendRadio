@@ -16,13 +16,17 @@ class Story: HousoushitsuBase {
     override init(data: NSDictionary) {
         super.init(data: data)
         
-        let snippet = data["snippet"] as! NSDictionary
-        let id = data["id"] as! NSDictionary
+        if let snippet = data["snippet"] as? NSDictionary {
+            title = Utils.getStringFromJSON(snippet, key: "title")
+            if let str = snippet.valueForKeyPath("thumbnails.default.url") as? String {
+                url = str
+            }
+        }
         
-        title = Utils.getStringFromJSON(snippet, key: "title")
-        
-        url = snippet.valueForKeyPath("thumbnails.default.url") as! String
-        
-        videoId = id.valueForKeyPath("videoId") as! String
+        if let id = data["id"] as? NSDictionary {
+            if let str = id.valueForKeyPath("videoId") as? String {
+                videoId = str
+            }
+        }
     }
 }

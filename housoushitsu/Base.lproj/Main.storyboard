@@ -4,21 +4,61 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--ホーム-->
+        <scene sceneID="5RT-B9-5Ie">
+            <objects>
+                <collectionViewController id="VdB-8a-lv4" customClass="HomeCollectionViewController" customModule="housoushitsu" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2Fh-dr-Tx6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VwV-ol-fdb">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="thP-m8-MXV" customClass="VideoListCollectionViewCell" customModule="housoushitsu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeHeaderView" id="Oix-SN-8JM" customClass="HomeHeaderView" customModule="housoushitsu" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.91764705879999997" green="0.29803921570000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="VdB-8a-lv4" id="6DX-WD-wxs"/>
+                            <outlet property="delegate" destination="VdB-8a-lv4" id="hSb-w4-jCM"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="home" id="43H-g4-nVt"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cro-74-Iod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="-489"/>
+        </scene>
         <!--放送室-->
         <scene sceneID="rAX-pA-sga">
             <objects>
                 <tabBarController id="sGh-tR-jIy" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="放送室" id="7AQ-wE-ZjH"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="jxG-Ge-vOJ">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jxG-Ge-vOJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="KD5-9l-bqb" kind="relationship" relationship="viewControllers" id="A5Z-YQ-qsM"/>
-                        <segue destination="NLx-Na-BWw" kind="relationship" relationship="viewControllers" id="GhN-4Z-1YE"/>
+                        <segue destination="VdB-8a-lv4" kind="relationship" relationship="viewControllers" id="mRA-pV-2qT"/>
+                        <segue destination="NLx-Na-BWw" kind="relationship" relationship="viewControllers" id="rqD-YD-I5m"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJA-cP-ice" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -55,7 +95,7 @@
         <scene sceneID="oSh-3A-sxT">
             <objects>
                 <navigationController id="P6G-UA-r5r" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="1Zb-LQ-Lf8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Zb-LQ-Lf8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -70,33 +110,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hy5-vU-Gki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-748" y="-344"/>
-        </scene>
-        <!--ランダム-->
-        <scene sceneID="hKz-5m-gzT">
-            <objects>
-                <tableViewController id="KD5-9l-bqb" customClass="StoryTableViewController" customModule="housoushitsu" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rgj-hP-VQw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryTableViewCell" id="2eV-qu-EBd">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2eV-qu-EBd" id="ear-BE-C27">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="KD5-9l-bqb" id="GH0-Iu-hHQ"/>
-                            <outlet property="delegate" destination="KD5-9l-bqb" id="eh4-54-TF2"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="ランダム" image="home" id="udK-X9-n9Z"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lse-d4-Pd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="735" y="-480"/>
         </scene>
         <!--バックナンバー-->
         <scene sceneID="XSm-zF-gSo">
