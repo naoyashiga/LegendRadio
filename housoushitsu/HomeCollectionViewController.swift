@@ -9,11 +9,12 @@
 import UIKit
 
 class HomeCollectionViewController: BaseCollectionViewController, UICollectionViewDelegateFlowLayout {
-    private var sections = [[Story]]() {
-        didSet{
-            collectionView?.reloadData()
-        }
-    }
+    private var sections = [[Story]]()
+//    private var sections = [[Story]]() {
+//        didSet{
+//            collectionView?.reloadData()
+//        }
+//    }
     private var queries = [String]()
     private let sectionStoriesCount = 3
     private let sectionCount = 8
@@ -35,11 +36,12 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
         cellWidth = view.bounds.width
         cellHeight = view.bounds.height / 8
         
+        setStories()
+        
         collectionView?.registerNib(UINib(nibName: reuseIdentifier_homeHeaderView, bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: reuseIdentifier_homeHeaderView)
         
         collectionView?.registerNib(UINib(nibName: reuseIdentifier_viewoListCell, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier_viewoListCell)
         
-        setStories()
         
     }
 
@@ -76,7 +78,8 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
             if self.index < self.sectionCount {
                 self.setStories()
             } else {
-                //                println("finish")
+                self.collectionView?.reloadData()
+                println(self.sections.count)
                 self.activityIndicator.stopAnimating()
             }
         })
@@ -104,14 +107,18 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
         //#warning Incomplete method implementation -- Return the number of sections
         return sectionCount
     }
+    
 
+    var headerIndex = 0
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         
         switch kind {
         case UICollectionElementKindSectionHeader:
             let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: reuseIdentifier_homeHeaderView, forIndexPath: indexPath) as! HomeHeaderView
             
-//            headerView.backgroundColor = UIColor.redColor()
+            if queries.count == sectionCount {
+                headerView.headerTitleLabel.text = queries[indexPath.section]
+            }
             
             return headerView
             
@@ -128,13 +135,23 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 3
+        return sectionStoriesCount
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier_viewoListCell, forIndexPath: indexPath) as! VideoListCollectionViewCell
     
-        // Configure the cell
+//        println(sections.count)
+        
+        if sections.count == 0 {
+            return cell
+        }
+        
+        let sectionStories = sections[indexPath.section]
+        let story = sectionStories[indexPath.row]
+        
+        cell.titleLabel.text = story.title
+        cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
     
         return cell
     }

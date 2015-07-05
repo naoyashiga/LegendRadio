@@ -9,6 +9,8 @@
 import UIKit
 
 class VideoListCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var thumbNailImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

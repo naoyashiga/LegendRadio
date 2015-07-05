@@ -3,6 +3,11 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="axisstd-bold.otf">
+            <string>AxisStd-Bold</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -10,14 +15,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOX-qA-ADG">
-                    <rect key="frame" x="8" y="14" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第0回" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOX-qA-ADG">
+                    <rect key="frame" x="8" y="14" width="46" height="21"/>
+                    <fontDescription key="fontDescription" name="AxisStd-Bold" family="AXIS Std" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.88235294119999996" green="0.54901960780000003" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="0.86303766393862402" blue="0.74702250874125875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eOX-qA-ADG" secondAttribute="bottom" constant="15" id="LF0-TX-IiE"/>
+                <constraint firstItem="eOX-qA-ADG" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="QM6-9Z-XAK"/>
+                <constraint firstItem="eOX-qA-ADG" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="14" id="dx5-Z8-1Ju"/>
+            </constraints>
+            <connections>
+                <outlet property="headerTitleLabel" destination="eOX-qA-ADG" id="iRq-ns-vVc"/>
+            </connections>
         </collectionReusableView>
     </objects>
 </document>

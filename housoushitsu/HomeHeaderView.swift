@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeHeaderView: UICollectionReusableView {
+    @IBOutlet weak var headerTitleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

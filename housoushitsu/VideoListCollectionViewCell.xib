@@ -3,6 +3,11 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="axisstd-medium.otf">
+            <string>AxisStd-Medium</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -11,10 +16,38 @@
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="310" height="88"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dhZ-xV-M5F" userLabel="thumbNailImage">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="135" id="bdw-mx-r8c"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="松本人志の放送室 第45回 「松本『携帯の絵文字はもっといいのを考えろ！』」" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-Ck-pDo" userLabel="Title">
+                        <rect key="frame" x="153" y="14" width="149" height="66"/>
+                        <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.98027151823043823" green="0.98024213314056396" blue="0.98025882244110107" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dhZ-xV-M5F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2uS-Uv-ByT"/>
+                <constraint firstAttribute="trailing" secondItem="kcE-Ck-pDo" secondAttribute="trailing" constant="8" id="4vq-cG-vlT"/>
+                <constraint firstAttribute="bottom" secondItem="kcE-Ck-pDo" secondAttribute="bottom" constant="8" id="EPK-z2-YXL"/>
+                <constraint firstAttribute="bottom" secondItem="dhZ-xV-M5F" secondAttribute="bottom" id="ggw-Px-5jC"/>
+                <constraint firstItem="dhZ-xV-M5F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ocs-0A-lGf"/>
+                <constraint firstItem="kcE-Ck-pDo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="piB-SC-XQ7"/>
+                <constraint firstItem="kcE-Ck-pDo" firstAttribute="leading" secondItem="dhZ-xV-M5F" secondAttribute="trailing" constant="18" id="raV-IA-FBY"/>
+                <constraint firstItem="kcE-Ck-pDo" firstAttribute="leading" secondItem="dhZ-xV-M5F" secondAttribute="trailing" constant="18" id="xwc-RH-fk4"/>
+            </constraints>
             <size key="customSize" width="310" height="88"/>
+            <connections>
+                <outlet property="thumbNailImageView" destination="dhZ-xV-M5F" id="1fI-dV-XVt"/>
+                <outlet property="titleLabel" destination="kcE-Ck-pDo" id="avw-dN-HoU"/>
+            </connections>
             <point key="canvasLocation" x="289" y="333"/>
         </collectionViewCell>
     </objects>
