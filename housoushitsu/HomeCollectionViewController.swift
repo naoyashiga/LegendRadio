@@ -160,6 +160,16 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
         
         cell.titleLabel.text = story.title
         cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
+        
+        getDurationTimes(story.videoId, callback: { (contentDetails) -> Void in
+            let duration = contentDetails[0].duration
+            cell.durationLabel.text = self.getDurationStr(duration)
+        })
+        
+        getStatistics(story.videoId, callback: { (statistics) -> Void in
+            cell.viewCountLabel.text = statistics[0].viewCount
+            cell.likeCountLabel.text = statistics[0].likeCount
+        })
     
         return cell
     }
@@ -169,6 +179,14 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier_viewoListCell, forIndexPath: indexPath) as! VideoListCollectionViewCell
+        
+        let sectionStories = sections[indexPath.section]
+        let story = sectionStories[indexPath.row]
+        
+        let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        vc.videoId = story.videoId
+        vc.navigationItem.title = story.title
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: UICollectionViewDelegateFlowLayout

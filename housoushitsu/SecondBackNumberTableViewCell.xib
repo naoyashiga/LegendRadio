@@ -27,11 +27,11 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第123回" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBW-4m-XzB">
                         <rect key="frame" x="108" y="19" width="74" height="21"/>
                         <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.25490196078431371" green="0.26666666666666666" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="0.1254679424" green="0.15686503669999999" blue="0.16971685080000001" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="mgb-lx-qQO" secondAttribute="bottom" constant="1" id="6PC-Sm-Ebi"/>
                     <constraint firstItem="mgb-lx-qQO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GLz-xU-4Eh"/>

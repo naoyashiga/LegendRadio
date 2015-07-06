@@ -296,8 +296,8 @@
 				9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */,
 				9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */,
 				9ACF59FB1B304CC4005202CC /* BackNumberTableViewCell.swift */,
-				9AF4669B1B4575DF005816CC /* Base */,
 				9ACF59FC1B304CC4005202CC /* BackNumberTableViewCell.xib */,
+				9AF4669B1B4575DF005816CC /* Base */,
 			);
 			name = View;
 			sourceTree = "<group>";

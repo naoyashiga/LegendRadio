@@ -29,6 +29,14 @@ extension UIColor {
         return UIColor.hexStr("e5e5e5", alpha: 1)
     }
     
+    class func navigationTitleColor() -> UIColor {
+        return UIColor.hexStr("ffffff", alpha: 1)
+    }
+    
+    class func navigationBackgroundColor() -> UIColor {
+        return UIColor.hexStr("FA8D3C", alpha: 1)
+    }
+    
     class func tabBarItemBackgroundColor() -> UIColor {
         return UIColor.hexStr("EF6C00", alpha: 1)
     }
@@ -38,11 +46,11 @@ extension UIColor {
     }
     
     class func cellLightBackgroundColor() -> UIColor {
-        return UIColor.hexStr("101010", alpha: 1)
+        return UIColor.hexStr("ffffff", alpha: 1)
     }
     
     class func cellDarkBackgroundColor() -> UIColor {
-        return UIColor.hexStr("000000", alpha: 1)
+        return UIColor.hexStr("efefef", alpha: 1)
     }
     
     class func cellSelectedBackgroundColor() -> UIColor {
@@ -50,10 +58,10 @@ extension UIColor {
     }
     
     class func tableHeaderBackgroundColor() -> UIColor {
-        return UIColor.hexStr("212121", alpha: 1)
+        return UIColor.hexStr("FA8D3C", alpha: 1)
     }
     
     class func tableHeaderTextColor() -> UIColor {
-        return UIColor.hexStr("F5F5F5", alpha: 1)
+        return UIColor.hexStr("ffffff", alpha: 1)
     }
 }

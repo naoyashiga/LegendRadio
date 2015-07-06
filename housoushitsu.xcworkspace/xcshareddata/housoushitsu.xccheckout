@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4D1B44678AD688E27915D43630CF1FCDE0AE976C</key>
-		<string>../DTIActivityIndicatorView-Swift/</string>
+		<string>../DTIActivityIndicatorView-Swift</string>
 		<key>6646EE8294AA0E6FDEEF3F67A1ACB83FAFBAA09B</key>
 		<string>..</string>
 	</dict>

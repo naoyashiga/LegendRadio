@@ -31,6 +31,8 @@ class BackNumberTableViewController: BaseTableViewController {
         tableView.contentInset = UIEdgeInsetsMake(0, 0, tabBarHeight!, 0)
         
         tableView.estimatedRowHeight = view.frame.height / 20
+        tableView.backgroundColor = UIColor.viewBackgroundColor()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,13 +82,6 @@ class BackNumberTableViewController: BaseTableViewController {
             cell.backNumberLabel.text = "第\(start)回-第\(end)回"
         }
 
-        
-        if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor.cellLightBackgroundColor()
-        } else {
-            cell.backgroundColor = UIColor.cellDarkBackgroundColor()
-        }
-        
         cell.layoutIfNeeded()
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero

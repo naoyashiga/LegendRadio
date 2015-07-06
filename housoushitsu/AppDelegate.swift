@@ -18,11 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let font = UIFont(name: "AxisStd-Bold", size: 18)
         if let font = font {
-            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.whiteColor()]
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.navigationTitleColor()]
         }
         
-        UITabBar.appearance().tintColor = UIColor.tabBarItemBackgroundColor()
-        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         return true
     }

@@ -18,6 +18,7 @@ class ListTableViewCell: BaseTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        contentView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
