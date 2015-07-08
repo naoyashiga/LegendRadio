@@ -17,8 +17,6 @@ class ListTableViewCell: BaseTableViewCell {
     @IBOutlet weak var durationLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        contentView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

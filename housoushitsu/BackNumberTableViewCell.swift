@@ -13,7 +13,6 @@ class BackNumberTableViewCell: BaseTableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseTableViewController: UITableViewController, UIGestureRecognizerDelegate {
+class BaseTableViewController: UITableViewController {
     var activityIndicator = UIActivityIndicatorView()
 
     override func viewDidLoad() {
@@ -19,8 +19,7 @@ class BaseTableViewController: UITableViewController, UIGestureRecognizerDelegat
         
         tableView.layoutMargins = UIEdgeInsetsZero
         
-        
-        navigationController?.interactivePopGestureRecognizer.delegate = self
+//        navigationController?.interactivePopGestureRecognizer.delegate = self
         
         setBackButton()
     }
@@ -83,10 +82,10 @@ class BaseTableViewController: UITableViewController, UIGestureRecognizerDelegat
         }
     }
     
-    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
-        if let count = navigationController?.viewControllers.count where count > 1 {
-            return true
-        }
-        return false
-    }
+//    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        if let count = navigationController?.viewControllers.count where count > 1 {
+//            return true
+//        }
+//        return false
+//    }
 }

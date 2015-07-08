@@ -9,13 +9,12 @@
 import UIKit
 
 
-class BaseCollectionViewController: UICollectionViewController, UIGestureRecognizerDelegate {
+class BaseCollectionViewController: UICollectionViewController {
     var activityIndicator = UIActivityIndicatorView()
-    let reuseIdentifier = "Cell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.interactivePopGestureRecognizer.delegate = self
+//        navigationController?.interactivePopGestureRecognizer.delegate = self
         
         setBackButton()
     }
@@ -48,30 +47,27 @@ class BaseCollectionViewController: UICollectionViewController, UIGestureRecogni
     // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        //#warning Incomplete method implementation -- Return the number of sections
         return 0
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
         return 0
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let reuseIdentifier = "Cell"
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
-    
-        // Configure the cell
     
         return cell
     }
 
     // MARK: UICollectionViewDelegate
-    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
-        if let count = navigationController?.viewControllers.count where count > 1 {
-            return true
-        }
-        return false
-    }
+//    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        if let count = navigationController?.viewControllers.count where count > 1 {
+//            return true
+//        }
+//        return false
+//    }
 
 }

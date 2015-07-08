@@ -12,9 +12,6 @@ class SecondBackNumberTableViewCell: BaseTableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        contentView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

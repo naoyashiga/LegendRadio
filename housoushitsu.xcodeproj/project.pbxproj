@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		310C8D1A629F23EB373AA302 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F79E1B2B08B9ECC621AC5C /* libPods.a */; };
+		9A1B95BE1B4BF6CC0091591A /* VideoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B95BD1B4BF6CC0091591A /* VideoCollectionViewController.swift */; };
 		9A4B23A11B42C09A0032574F /* StoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */; };
 		9A4B23A61B440A920032574F /* animateTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B23A51B440A920032574F /* animateTable.swift */; };
 		9A4B23A81B4413100032574F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B23A71B4413100032574F /* BaseTableViewController.swift */; };
@@ -22,6 +23,7 @@
 		9ACF5A001B3436C8005202CC /* SecondBackNumberTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */; };
 		9ACF5A061B38369D005202CC /* SecondBackNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */; };
 		9ACF5A071B38369D005202CC /* SecondBackNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */; };
+		9AD13DCC1B4AB94600A66205 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD13DCB1B4AB94600A66205 /* VideoInfo.swift */; };
 		9AEEB1A91B25BB2800EB1DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */; };
 		9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AA1B25BB2800EB1DFD /* ViewController.swift */; };
 		9AEEB1AE1B25BB2800EB1DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEEB1AC1B25BB2800EB1DFD /* Main.storyboard */; };
@@ -81,6 +83,7 @@
 		536757F3FC6257EF7145B68B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5C720A021D5FB74F0709AA66 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		94F79E1B2B08B9ECC621AC5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1B95BD1B4BF6CC0091591A /* VideoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewController.swift; sourceTree = "<group>"; };
 		9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewController.swift; sourceTree = "<group>"; };
 		9A4B23A51B440A920032574F /* animateTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animateTable.swift; sourceTree = "<group>"; };
 		9A4B23A71B4413100032574F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBackNumberTableViewController.swift; sourceTree = "<group>"; };
 		9ACF5A041B38369D005202CC /* SecondBackNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondBackNumberTableViewCell.swift; sourceTree = "<group>"; };
 		9ACF5A051B38369D005202CC /* SecondBackNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondBackNumberTableViewCell.xib; sourceTree = "<group>"; };
+		9AD13DCB1B4AB94600A66205 /* VideoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
 		9AEEB1A31B25BB2800EB1DFD /* housoushitsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = housoushitsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEEB1A71B25BB2800EB1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AEEB1A81B25BB2800EB1DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -336,7 +340,6 @@
 		9AF466871B4556F6005816CC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */,
 				9A4B23A01B42C09A0032574F /* StoryTableViewController.swift */,
 				9AF466C01B480A93005816CC /* HomeCollectionViewController.swift */,
 			);
@@ -347,7 +350,9 @@
 			isa = PBXGroup;
 			children = (
 				9AEEB1C81B25C48D00EB1DFD /* ListTableViewController.swift */,
+				9A1B95BD1B4BF6CC0091591A /* VideoCollectionViewController.swift */,
 				9ACF59FF1B3436C8005202CC /* SecondBackNumberTableViewController.swift */,
+				9ACF59F91B304C47005202CC /* BackNumberTableViewController.swift */,
 			);
 			name = BackNumber;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				9AEEB1D41B25C9B200EB1DFD /* Story.swift */,
 				9AF466B71B47BCC5005816CC /* ContentDetails.swift */,
 				9AF466BE1B47E9CE005816CC /* Statistics.swift */,
+				9AD13DCB1B4AB94600A66205 /* VideoInfo.swift */,
 			);
 			name = "video Data";
 			sourceTree = "<group>";
@@ -554,6 +560,7 @@
 				9AF466BF1B47E9CE005816CC /* Statistics.swift in Sources */,
 				9AF466C41B481D72005816CC /* VideoListCollectionViewCell.swift in Sources */,
 				9AF466CA1B482A0F005816CC /* HomeHeaderView.swift in Sources */,
+				9AD13DCC1B4AB94600A66205 /* VideoInfo.swift in Sources */,
 				9A4B23A81B4413100032574F /* BaseTableViewController.swift in Sources */,
 				9AEEB1CD1B25C4C500EB1DFD /* ListTableViewCell.swift in Sources */,
 				9AEEB1AB1B25BB2800EB1DFD /* ViewController.swift in Sources */,
@@ -568,6 +575,7 @@
 				9AF466C11B480A94005816CC /* HomeCollectionViewController.swift in Sources */,
 				9ACF59FD1B304CC4005202CC /* BackNumberTableViewCell.swift in Sources */,
 				9ACF5A061B38369D005202CC /* SecondBackNumberTableViewCell.swift in Sources */,
+				9A1B95BE1B4BF6CC0091591A /* VideoCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

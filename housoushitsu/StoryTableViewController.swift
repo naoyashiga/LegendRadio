@@ -84,21 +84,7 @@ class StoryTableViewController: BaseTableViewController {
         })
     }
     
-    func getDurationTimes(videoID: String, callback:(([ContentDetails]) -> Void)) {
-        let contentsDetailURL = Config.REQUEST_CONTENT_DETAILS_URL + "id=\(videoID)"
-        
-        HousoushitsuObjectHandler.getContentDetails(contentsDetailURL, callback: {(contentDetails) -> Void in
-            callback(contentDetails)
-        })
-    }
     
-    func getStatistics(videoID: String, callback:(([Statistics]) -> Void)) {
-        let statisticsURL = Config.REQUEST_STATISTICS_URL + "id=\(videoID)"
-        
-        HousoushitsuObjectHandler.getStatistics(statisticsURL, callback: {(statistics) -> Void in
-            callback(statistics)
-        })
-    }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return sections.count
@@ -137,27 +123,17 @@ class StoryTableViewController: BaseTableViewController {
         cell.titleLabel.text = story.title
         cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
         
-        getDurationTimes(story.videoId, callback: { (contentDetails) -> Void in
-            //PT2H10M11S
+        VideoInfo.getDurationTimes(story.videoId, callback: { (contentDetails) -> Void in
             let duration = contentDetails[0].duration
-            cell.durationLabel.text = self.getDurationStr(duration)
+            cell.durationLabel.text = VideoInfo.getDurationStr(duration)
         })
         
-        getStatistics(story.videoId, callback: { (statistics) -> Void in
-//            let viewCount = statistics[0].viewCount
-//            let likeCount = statistics[0].likeCount
+        VideoInfo.getStatistics(story.videoId, callback: { (statistics) -> Void in
             cell.viewCountLabel.text = statistics[0].viewCount
             cell.likeCountLabel.text = statistics[0].likeCount
         })
         
         cell.layoutIfNeeded()
-        
-        if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor.cellLightBackgroundColor()
-        } else {
-            cell.backgroundColor = UIColor.cellDarkBackgroundColor()
-        }
-        
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
         
@@ -174,30 +150,5 @@ class StoryTableViewController: BaseTableViewController {
         vc.videoId = story.videoId
         vc.navigationItem.title = story.title
         navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func getDurationStr(nonFormatStr: String) -> String {
-        let pH = "H"
-        let pM = "M"
-        let pS = "S"
-        
-        let pattern = "[PT|S]"
-        
-        let rH = "時間"
-        let rM = "分"
-        let rS = "秒"
-        let replace = ""
-        
-        var replaceString = doReplace(str: nonFormatStr, pattern: pH, replaceStr: rH)
-        replaceString = doReplace(str: replaceString, pattern: pM, replaceStr: rM)
-        replaceString = doReplace(str: replaceString, pattern: pS, replaceStr: rS)
-        replaceString = doReplace(str: replaceString, pattern: pattern, replaceStr: replace)
-        
-        return replaceString
-    }
-    
-    func doReplace(#str:String, pattern: String, replaceStr: String) -> String {
-        return str.stringByReplacingOccurrencesOfString(pattern, withString: replaceStr, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
-        
     }
 }

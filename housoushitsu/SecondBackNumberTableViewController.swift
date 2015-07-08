@@ -70,7 +70,11 @@ class SecondBackNumberTableViewController: BaseTableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BackNumberTableViewCell
         let start = cell.backNumberLabel.text
-        let vc = ListTableViewController()
+//        let vc = VideoCollectionViewController()
+        let collectionViewLayout = UICollectionViewFlowLayout()
+        collectionViewLayout.itemSize = CGSize(width: view.frame.width, height: 200)
+        collectionViewLayout.minimumInteritemSpacing = 1
+        let vc = VideoCollectionViewController(collectionViewLayout: collectionViewLayout)
         
         var storyIndex = initialIndex + indexPath.row
         var storyIndexStr = ""
@@ -84,6 +88,13 @@ class SecondBackNumberTableViewController: BaseTableViewController {
         
         vc.navigationItem.title = "第\(storyIndex)回の検索結果"
         
+        
+        
+//        let vc2 = TestCollectionViewController()
+//        navigationController?.pushViewController(vc2, animated: true)
         navigationController?.pushViewController(vc, animated: true)
+        
+//        performSegueWithIdentifier("VideoList", sender: self)
     }
+    
 }

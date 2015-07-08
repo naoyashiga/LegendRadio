@@ -15,6 +15,7 @@ class ListTableViewController: BaseTableViewController {
         }
     }
     
+    private let storiesCount = 6
     let reuseIdentifier = "ListTableViewCell"
     var searchText = ""
 
@@ -24,8 +25,6 @@ class ListTableViewController: BaseTableViewController {
         setStories()
         setNib(reuseIdentifier)
         showActivityIndicator(view)
-        
-//        tableView.estimatedRowHeight = 200
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,12 +42,11 @@ class ListTableViewController: BaseTableViewController {
     
     func setStories() {
         let searchWord = setSearchText()
-        let requestURL = Config.REQUEST_SEARCH_URL + "q=\(searchWord)&part=snippet&maxResults=10"
-        
-//        println(requestURL)
+        let requestURL = Config.REQUEST_SEARCH_URL + "q=\(searchWord)&part=snippet&maxResults=\(storiesCount)"
         
         HousoushitsuObjectHandler.getStories(requestURL, callback: {(stories) -> Void in
             self.stories = stories
+//            self.tableView.reloadData()
             self.activityIndicator.stopAnimating()
         })
     }
@@ -64,24 +62,29 @@ class ListTableViewController: BaseTableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stories.count
+        return storiesCount
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ListTableViewCell
+        
         let story = stories[indexPath.row]
         
         cell.titleLabel.text = story.title
         cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
         
-        cell.layoutIfNeeded()
-
-        if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor.cellLightBackgroundColor()
-        } else {
-            cell.backgroundColor = UIColor.cellDarkBackgroundColor()
-        }
+        VideoInfo.getDurationTimes(story.videoId, callback: { (contentDetails) -> Void in
+            let duration = contentDetails[0].duration
+            cell.durationLabel.text = VideoInfo.getDurationStr(duration)
+        })
         
+        VideoInfo.getStatistics(story.videoId, callback: { (statistics) -> Void in
+            cell.viewCountLabel.text = statistics[0].viewCount
+            cell.likeCountLabel.text = statistics[0].likeCount
+        })
+        
+        
+        cell.layoutIfNeeded()
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
 

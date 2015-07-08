@@ -11,26 +11,6 @@ import UIKit
 
 class HousoushitsuObjectHandler {
     
-//    class func asyncLoadShotImage(shot: Story, imageView: UIImageView){
-//        let downloadQueue = dispatch_queue_create("com.naoyashiga.processdownload", nil)
-//        
-//        dispatch_async(downloadQueue){
-//            var data = NSData(contentsOfURL: NSURL(string: shot.imageUrl)!)
-//            
-//            var image: UIImage?
-//            var sdImageView: UIImageView?
-//            
-//            if data != nil {
-//                shot.imageData = data
-//                image = UIImage(data: data!)!
-//            }
-//            
-//            dispatch_async(dispatch_get_main_queue()){
-//                imageView.image = image
-//            }
-//        }
-//    }
-    
     class func getStories(url: String, callback:(([Story]) -> Void)){
         var stories = [Story]()
         println(url)

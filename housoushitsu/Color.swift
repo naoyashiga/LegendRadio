@@ -37,7 +37,7 @@ extension UIColor {
         return UIColor.hexStr("FA8D3C", alpha: 1)
     }
     
-    class func tabBarItemBackgroundColor() -> UIColor {
+    class func tabBarItemTintColor() -> UIColor {
         return UIColor.hexStr("EF6C00", alpha: 1)
     }
     
