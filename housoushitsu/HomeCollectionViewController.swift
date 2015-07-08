@@ -144,13 +144,22 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
         cell.thumbNailImageView.sd_setImageWithURL(NSURL(string: story.url))
         
         VideoInfo.getDurationTimes(story.videoId, callback: { (contentDetails) -> Void in
-            let duration = contentDetails[0].duration
-            cell.durationLabel.text = VideoInfo.getDurationStr(duration)
+            if contentDetails.isEmpty {
+                cell.durationLabel.text = "??:??"
+            } else {
+                let duration = contentDetails[0].duration
+                cell.durationLabel.text = VideoInfo.getDurationStr(duration)
+            }
         })
         
         VideoInfo.getStatistics(story.videoId, callback: { (statistics) -> Void in
-            cell.viewCountLabel.text = statistics[0].viewCount
-            cell.likeCountLabel.text = statistics[0].likeCount
+            if statistics.isEmpty {
+                cell.viewCountLabel.text = "?"
+                cell.likeCountLabel.text = "?"
+            } else {
+                cell.viewCountLabel.text = statistics[0].viewCount
+                cell.likeCountLabel.text = statistics[0].likeCount
+            }
         })
     
         return cell
