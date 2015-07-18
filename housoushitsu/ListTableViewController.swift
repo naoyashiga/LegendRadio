@@ -97,6 +97,8 @@ class ListTableViewController: BaseTableViewController {
         let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
         
         vc.videoId = story.videoId
+        vc.videoTitle = story.title
+        
         vc.navigationItem.title = story.title
         
         navigationController?.pushViewController(vc, animated: true)

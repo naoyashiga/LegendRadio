@@ -21,13 +21,17 @@ class VideoPlayManager: NSObject {
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
     }
     
-    func setVideoPlayer(videoID: String, playerView: UIView) {
+    func setVideoPlayer(#videoID: String, playerView: UIView) {
         videoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: videoID);
         
         videoPlayerViewController!.moviePlayer.backgroundPlaybackEnabled = true
         videoPlayerViewController!.presentInView(playerView);
         videoPlayerViewController!.moviePlayer.controlStyle = MPMovieControlStyle.Embedded
         videoPlayerViewController!.moviePlayer.play()
+    }
+    
+    func setPlayingInfo(#title: String) {
+        MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [MPMediaItemPropertyArtist : "松本人志の放送室",  MPMediaItemPropertyTitle : title]
     }
     
     func remoteControlReceivedWithEvent(event: UIEvent) {

@@ -12,6 +12,7 @@ import AVFoundation
 class DetailViewController: UIViewController {
     @IBOutlet weak var playerView: UIView!
     var videoId = ""
+    var videoTitle = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,9 @@ class DetailViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        VideoPlayManager.sharedManager.setVideoPlayer(videoId, playerView: playerView)
+        
+        VideoPlayManager.sharedManager.setVideoPlayer(videoID: videoId, playerView: playerView)
+        VideoPlayManager.sharedManager.setPlayingInfo(title: videoTitle)
     }
     
     override func didReceiveMemoryWarning() {
