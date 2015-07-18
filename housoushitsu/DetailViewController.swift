@@ -12,7 +12,6 @@ import AVFoundation
 class DetailViewController: UIViewController {
     @IBOutlet weak var playerView: UIView!
     var videoId = ""
-    var videoPlayerViewController: XCDYouTubeVideoPlayerViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +35,6 @@ class DetailViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        becomeFirstResponder()
-        
         VideoPlayManager.sharedManager.setVideoPlayer(videoId, playerView: playerView)
     }
     

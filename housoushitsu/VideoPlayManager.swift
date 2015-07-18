@@ -13,6 +13,14 @@ class VideoPlayManager: NSObject {
     static let sharedManager = VideoPlayManager()
     var videoPlayerViewController: XCDYouTubeVideoPlayerViewController?
     
+    override init() {
+        var audioSession = AVAudioSession.sharedInstance()
+        audioSession.setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        audioSession.setActive(true, error: nil)
+        
+        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
+    }
+    
     func setVideoPlayer(videoID: String, playerView: UIView) {
         videoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: videoID);
         
