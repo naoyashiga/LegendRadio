@@ -24,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.tabBarItemTintColor()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
+        var audioSession = AVAudioSession.sharedInstance()
+        audioSession.setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        audioSession.setActive(true, error: nil)
+        
+        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
         return true
     }
 
@@ -40,6 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
+    }
+    
+    override func remoteControlReceivedWithEvent(event: UIEvent) {
+        VideoPlayManager.sharedManager.remoteControlReceivedWithEvent(event)
     }
 }
 

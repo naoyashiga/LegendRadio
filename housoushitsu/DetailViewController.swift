@@ -12,21 +12,17 @@ import AVFoundation
 class DetailViewController: UIViewController {
     @IBOutlet weak var playerView: UIView!
     var videoId = ""
+    var videoPlayerViewController: XCDYouTubeVideoPlayerViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setBackButton()
         
-        var audioSession = AVAudioSession.sharedInstance()
-        audioSession.setCategory(AVAudioSessionCategoryPlayback, error: nil)
-        audioSession.setActive(true, error: nil)
-        
-        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
-        var newTaskId = UIBackgroundTaskInvalid
-        newTaskId = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({ () -> Void in
-            return
-        })
+//        var newTaskId = UIBackgroundTaskInvalid
+//        newTaskId = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({ () -> Void in
+//            return
+//        })
     }
     
     func setBackButton() {
@@ -40,14 +36,9 @@ class DetailViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
+        becomeFirstResponder()
         
-//        let idVideo = "tNT6M-SHuhI"
-        var videoPlayerViewController: XCDYouTubeVideoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: videoId);
-        
-        videoPlayerViewController.moviePlayer.backgroundPlaybackEnabled = true
-        videoPlayerViewController.presentInView(playerView);
-        videoPlayerViewController.moviePlayer.controlStyle = MPMovieControlStyle.Embedded
-        videoPlayerViewController.moviePlayer.play()
+        VideoPlayManager.sharedManager.setVideoPlayer(videoId, playerView: playerView)
     }
     
     override func didReceiveMemoryWarning() {

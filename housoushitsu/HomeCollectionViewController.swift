@@ -119,6 +119,7 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
             
         default:
             assert(false, "error")
+            return UICollectionReusableView()
         }
     }
     
