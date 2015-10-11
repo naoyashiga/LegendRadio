@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_03" translatesAutoresizingMaskIntoConstraints="NO" id="P4c-wt-aPx">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="P4c-wt-aPx">
                     <rect key="frame" x="140" y="140" width="200" height="200"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="RE6-cN-LOn"/>
@@ -29,6 +29,6 @@
         </view>
     </objects>
     <resources>
-        <image name="launch_03" width="512" height="512"/>
+        <image name="launchIcon" width="512" height="512"/>
     </resources>
 </document>

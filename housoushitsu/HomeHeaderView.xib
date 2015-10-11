@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第0回" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOX-qA-ADG">
-                    <rect key="frame" x="8" y="18" width="41" height="15"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第?回" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOX-qA-ADG">
+                    <rect key="frame" x="8" y="18" width="39" height="15"/>
                     <fontDescription key="fontDescription" name="AxisStd-Bold" family="AXIS Std" pointSize="15"/>
                     <color key="textColor" red="0.98027151820000002" green="0.98024213309999997" blue="0.98025882239999995" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>

@@ -46,7 +46,7 @@ class VideoInfo {
         return replaceString
     }
     
-    class func doReplace(#str:String, pattern: String, replaceStr: String) -> String {
+    class func doReplace(str str:String, pattern: String, replaceStr: String) -> String {
         return str.stringByReplacingOccurrencesOfString(pattern, withString: replaceStr, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
         
     }

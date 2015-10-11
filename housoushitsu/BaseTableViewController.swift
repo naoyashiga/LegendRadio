@@ -53,15 +53,15 @@ class BaseTableViewController: UITableViewController {
         activityIndicator.startAnimating()
     }
     
-    func animateTable<T: UITableViewCell>(#customCell:T) {
+    func animateTable<T: UITableViewCell>(customCell customCell:T) {
         tableView.reloadData()
         
-        let cells = tableView.visibleCells()
+        let cells = tableView.visibleCells
         let tableHeight: CGFloat = tableView.bounds.size.height
         let duration: NSTimeInterval = 0.5
         
         for i in cells {
-            let cell = i as! UITableViewCell
+            let cell = i 
             let storyCell = cell as! T
             //        storyCell.transform = CGAffineTransformMakeTranslation(0, tableHeight)
             storyCell.transform = CGAffineTransformMakeTranslation(0, cell.frame.size.height / 3)
@@ -71,9 +71,9 @@ class BaseTableViewController: UITableViewController {
         var index = 0
         
         for a in cells {
-            let cell = a as! UITableViewCell
+            let cell = a 
             let storyCell = cell as! T
-            UIView.animateWithDuration(duration, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: nil, animations: {
+            UIView.animateWithDuration(duration, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
                 storyCell.transform = CGAffineTransformMakeTranslation(0, 0);
                 storyCell.layer.opacity = 1.0
                 }, completion: nil)

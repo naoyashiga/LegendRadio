@@ -448,6 +448,8 @@
 		9AEEB19B1B25BB2800EB1DFD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = naoyashiga;
 				TargetAttributes = {
@@ -708,12 +710,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
+				PROVISIONING_PROFILE = "67dee61b-f066-45ad-9b34-29905a43afec";
 				SWIFT_OBJC_BRIDGING_HEADER = "housoushitsu/housoushitsu-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -725,12 +727,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Naoya Sugimoto (S8GGSYBVK5)";
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = housoushitsu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "02c79591-e6c0-4d98-b7bd-5d88990d865f";
+				PROVISIONING_PROFILE = "67dee61b-f066-45ad-9b34-29905a43afec";
 				SWIFT_OBJC_BRIDGING_HEADER = "housoushitsu/housoushitsu-Bridging-Header.h";
 			};
 			name = Release;

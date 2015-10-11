@@ -83,7 +83,7 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
                 self.setStories()
             } else {
                 self.collectionView?.reloadData()
-                println(self.sections.count)
+                print(self.sections.count)
                 self.activityIndicator.stopAnimating()
             }
         })
@@ -109,7 +109,7 @@ class HomeCollectionViewController: BaseCollectionViewController, UICollectionVi
             }
             
             let cornerRadius: CGFloat = 5.0
-            let maskPath = UIBezierPath(roundedRect: headerView.bounds, byRoundingCorners: (UIRectCorner.TopLeft | UIRectCorner.TopRight), cornerRadii: CGSizeMake(cornerRadius, cornerRadius))
+            let maskPath = UIBezierPath(roundedRect: headerView.bounds, byRoundingCorners: ([UIRectCorner.TopLeft, UIRectCorner.TopRight]), cornerRadii: CGSizeMake(cornerRadius, cornerRadius))
             let maskLayer = CAShapeLayer()
             maskLayer.frame = headerView.bounds
             maskLayer.path = maskPath.CGPath

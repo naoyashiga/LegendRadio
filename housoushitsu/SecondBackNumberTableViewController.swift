@@ -76,7 +76,7 @@ class SecondBackNumberTableViewController: BaseTableViewController {
         collectionViewLayout.minimumInteritemSpacing = 1
         let vc = VideoCollectionViewController(collectionViewLayout: collectionViewLayout)
         
-        var storyIndex = initialIndex + indexPath.row
+        let storyIndex = initialIndex + indexPath.row
         var storyIndexStr = ""
         
         if storyIndex < 100 {

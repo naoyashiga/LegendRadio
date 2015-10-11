@@ -18,11 +18,11 @@ class HttpService {
         var task = session.dataTaskWithURL(nsURL, completionHandler: { data, response, error -> Void in
             
             if error != nil{
-                println("error")
+                print("error")
             }
             
             if data != nil {
-                let jsonData = NSJSONSerialization.JSONObjectWithData( data, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
+                let jsonData = (try! NSJSONSerialization.JSONObjectWithData( data, options: NSJSONReadingOptions.AllowFragments)) as! NSDictionary
                 let arry = jsonData.objectForKey("items") as! NSArray
                 callback(arry)
             }

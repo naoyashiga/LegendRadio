@@ -14,14 +14,20 @@ class VideoPlayManager: NSObject {
     var videoPlayerViewController: XCDYouTubeVideoPlayerViewController?
     
     override init() {
-        var audioSession = AVAudioSession.sharedInstance()
-        audioSession.setCategory(AVAudioSessionCategoryPlayback, error: nil)
-        audioSession.setActive(true, error: nil)
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+        } catch _ {
+        }
+        do {
+            try audioSession.setActive(true)
+        } catch _ {
+        }
         
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
     }
     
-    func setVideoPlayer(#videoID: String, playerView: UIView) {
+    func setVideoPlayer(videoID videoID: String, playerView: UIView) {
         videoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: videoID);
         
         videoPlayerViewController!.moviePlayer.backgroundPlaybackEnabled = true
@@ -30,7 +36,7 @@ class VideoPlayManager: NSObject {
         videoPlayerViewController!.moviePlayer.play()
     }
     
-    func setPlayingInfo(#title: String) {
+    func setPlayingInfo(title title: String) {
         MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [MPMediaItemPropertyArtist : "松本人志の放送室",  MPMediaItemPropertyTitle : title]
     }
     
@@ -39,15 +45,15 @@ class VideoPlayManager: NSObject {
         if event.type == UIEventType.RemoteControl {
             switch event.subtype {
             case UIEventSubtype.RemoteControlPlay:
-                println("play")
+                print("play")
                 videoPlayerViewController?.moviePlayer.play()
             case UIEventSubtype.RemoteControlPause:
-                println("stop")
+                print("stop")
                 videoPlayerViewController?.moviePlayer.pause()
             case UIEventSubtype.RemoteControlTogglePlayPause:
-                println("TogglePlayPause")
+                print("TogglePlayPause")
             default:
-                println("default")
+                print("default")
                 break
             }
         }

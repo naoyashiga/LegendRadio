@@ -29,15 +29,15 @@
                             <constraint firstAttribute="height" constant="10" id="zwN-NL-3Et"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="Uz8-Ug-7B2">
-                        <rect key="frame" x="213" y="79" width="13" height="13"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="Uz8-Ug-7B2">
+                        <rect key="frame" x="205" y="79" width="13" height="13"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="13" id="Zl8-f5-YVw"/>
                             <constraint firstAttribute="height" constant="13" id="jgL-E0-pOf"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="457690" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3U-Eu-ucV" userLabel="viewCount">
-                        <rect key="frame" x="161" y="80" width="45" height="11"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??????" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3U-Eu-ucV" userLabel="viewCount">
+                        <rect key="frame" x="161" y="80" width="37" height="11"/>
                         <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="11"/>
                         <color key="textColor" red="0.25490196078431371" green="0.26666666666666666" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -48,21 +48,21 @@
                             <constraint firstAttribute="width" constant="100" id="wxO-Jh-yjW"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="松本人志の放送室 第45回 「松本『携帯の絵文字はもっといいのを考えろ！』」" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJf-Gb-tY9">
-                        <rect key="frame" x="139" y="18" width="220" height="45"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJf-Gb-tY9">
+                        <rect key="frame" x="139" y="18" width="220" height="15"/>
                         <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="15"/>
                         <color key="textColor" red="0.25490196078431371" green="0.26666666666666666" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0時間00分00秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1T-Re-Ggy" userLabel="0時間00分00秒">
-                        <rect key="frame" x="8" y="80" width="74" height="10"/>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999987" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??:??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1T-Re-Ggy" userLabel="0時間00分00秒">
+                        <rect key="frame" x="8" y="80" width="26" height="10"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="45769" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY6-Hi-839" userLabel="likeCount">
-                        <rect key="frame" x="229" y="80" width="38" height="11"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??????" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY6-Hi-839" userLabel="likeCount">
+                        <rect key="frame" x="221" y="80" width="37" height="11"/>
                         <fontDescription key="fontDescription" name="AxisStd-Medium" family="AXIS Std" pointSize="11"/>
                         <color key="textColor" red="0.25490196078431371" green="0.26666666666666666" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
