@@ -1,5 +1,6 @@
 # 伝説のラジオ
 ![](https://raw.githubusercontent.com/naoyashiga/LegendRadio/master/demo.gif)
+![](https://raw.githubusercontent.com/naoyashiga/LegendRadio/master/housoushitsu/Images.xcassets/AppIcon.appiconset/Icon-60%403x.png)
 
 ラジオ番組「放送室」が聞けるアプリです。全391話を完全収録、バックグランド再生もできるのでラジオを聴きながら、他のアプリを見ることもできます
 
